@@ -1,0 +1,12 @@
+C:\Users\quang\HocTap\ky7\SWD392\LachaGarden\LachaGarden\LachaGarden\LachaGarden\obj\Release\net7.0\PubTmp\Out\LachaGarden.exe
+C:\Users\quang\HocTap\ky7\SWD392\LachaGarden\LachaGarden\LachaGarden\LachaGarden\obj\Release\net7.0\PubTmp\Out\appsettings.Development.json
+C:\Users\quang\HocTap\ky7\SWD392\LachaGarden\LachaGarden\LachaGarden\LachaGarden\obj\Release\net7.0\PubTmp\Out\appsettings.json
+C:\Users\quang\HocTap\ky7\SWD392\LachaGarden\LachaGarden\LachaGarden\LachaGarden\obj\Release\net7.0\PubTmp\Out\LachaGarden.dll
+C:\Users\quang\HocTap\ky7\SWD392\LachaGarden\LachaGarden\LachaGarden\LachaGarden\obj\Release\net7.0\PubTmp\Out\LachaGarden.deps.json
+C:\Users\quang\HocTap\ky7\SWD392\LachaGarden\LachaGarden\LachaGarden\LachaGarden\obj\Release\net7.0\PubTmp\Out\LachaGarden.runtimeconfig.json
+C:\Users\quang\HocTap\ky7\SWD392\LachaGarden\LachaGarden\LachaGarden\LachaGarden\obj\Release\net7.0\PubTmp\Out\LachaGarden.pdb
+C:\Users\quang\HocTap\ky7\SWD392\LachaGarden\LachaGarden\LachaGarden\LachaGarden\obj\Release\net7.0\PubTmp\Out\Microsoft.AspNetCore.OpenApi.dll
+C:\Users\quang\HocTap\ky7\SWD392\LachaGarden\LachaGarden\LachaGarden\LachaGarden\obj\Release\net7.0\PubTmp\Out\Microsoft.OpenApi.dll
+C:\Users\quang\HocTap\ky7\SWD392\LachaGarden\LachaGarden\LachaGarden\LachaGarden\obj\Release\net7.0\PubTmp\Out\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\quang\HocTap\ky7\SWD392\LachaGarden\LachaGarden\LachaGarden\LachaGarden\obj\Release\net7.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\quang\HocTap\ky7\SWD392\LachaGarden\LachaGarden\LachaGarden\LachaGarden\obj\Release\net7.0\PubTmp\Out\Swashbuckle.AspNetCore.SwaggerUI.dll
