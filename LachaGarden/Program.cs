@@ -15,8 +15,8 @@ namespace LachaGarden
             builder.Services.AddSwaggerGen();
 
             var app = builder.Build();
-            app.Urls.Add("http://10.2.0.0:7100");
-            app.Urls.Add("http://localhost:7100");
+            app.Urls.Add("http://s2tek.net:7100");
+            app.Urls.Add("https://localhost:7100");
             
             // Configure the HTTP request pipeline.
             app.UseSwagger();
