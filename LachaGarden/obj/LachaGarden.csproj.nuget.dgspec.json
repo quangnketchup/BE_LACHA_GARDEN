@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\ky7\\SWD392\\BE1\\BE_LACHA_GARDEN\\LachaGarden\\LachaGarden.csproj": {}
+    "C:\\Users\\quang\\source\\ssh-quang\\BE1\\BE_LACHA_GARDEN\\LachaGarden\\LachaGarden.csproj": {}
   },
   "projects": {
-    "D:\\ky7\\SWD392\\BE1\\BE_LACHA_GARDEN\\LachaGarden\\LachaGarden.csproj": {
+    "C:\\Users\\quang\\source\\ssh-quang\\BE1\\BE_LACHA_GARDEN\\LachaGarden\\LachaGarden.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\ky7\\SWD392\\BE1\\BE_LACHA_GARDEN\\LachaGarden\\LachaGarden.csproj",
+        "projectUniqueName": "C:\\Users\\quang\\source\\ssh-quang\\BE1\\BE_LACHA_GARDEN\\LachaGarden\\LachaGarden.csproj",
         "projectName": "LachaGarden",
-        "projectPath": "D:\\ky7\\SWD392\\BE1\\BE_LACHA_GARDEN\\LachaGarden\\LachaGarden.csproj",
+        "projectPath": "C:\\Users\\quang\\source\\ssh-quang\\BE1\\BE_LACHA_GARDEN\\LachaGarden\\LachaGarden.csproj",
         "packagesPath": "C:\\Users\\quang\\.nuget\\packages\\",
-        "outputPath": "D:\\ky7\\SWD392\\BE1\\BE_LACHA_GARDEN\\LachaGarden\\obj\\",
+        "outputPath": "C:\\Users\\quang\\source\\ssh-quang\\BE1\\BE_LACHA_GARDEN\\LachaGarden\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

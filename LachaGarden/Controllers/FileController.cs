@@ -13,7 +13,7 @@ namespace LachaGarden.Controllers
     {
         private static string API_KEY = "AIzaSyAp7q2T07VOPchctK0RVVFfdNU9KAjo1Uc";
         private static string Bucket = "lachagarden.appspot.com";
-        private static string AuthEmail = "123@gmail.com";
+        private static string AuthEmail = "1223@gmail.com";
         private static string AuthPassword = "123";
 
         [HttpPost]
