@@ -4,8 +4,8 @@ https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project>
   <PropertyGroup>
-    <_PublishTargetUrl>D:\ky7\SWD392\BE1\BE_LACHA_GARDEN\LachaGarden\bin\Release\net7.0\publish\</_PublishTargetUrl>
-    <History>True|2023-02-12T03:29:11.8774929Z;True|2023-02-05T19:59:54.6759245+07:00;True|2023-02-05T19:53:46.2710437+07:00;True|2023-02-05T19:50:53.9628942+07:00;True|2023-02-05T19:31:44.8331115+07:00;True|2023-02-05T16:57:22.4170304+07:00;True|2023-02-05T16:34:43.5344787+07:00;False|2023-02-05T16:31:00.3813437+07:00;True|2023-02-05T16:18:13.0245966+07:00;True|2023-02-05T16:13:56.5456508+07:00;</History>
+    <_PublishTargetUrl>C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Release\net6.0\publish\</_PublishTargetUrl>
+    <History>True|2023-02-15T13:54:47.9971433Z;True|2023-02-15T20:51:41.5767183+07:00;</History>
     <LastFailureDetails />
   </PropertyGroup>
 </Project>

@@ -1,35 +1,59 @@
+using LachaGarden.Services;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
+using Microsoft.OpenApi.Any;
+using Microsoft.OpenApi.Interfaces;
+using Microsoft.OpenApi.Models;
 
-namespace LachaGarden
+var builder = WebApplication.CreateBuilder(args);
+
+// Add services to the container.
+
+builder.Services.AddControllers();
+// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
+builder.Services.AddEndpointsApiExplorer();
+builder.Services.AddSwaggerGen();
+
+
+builder.Services.AddSwaggerGen(c =>
 {
-    public class Program
+    c.SwaggerDoc("v1", new OpenApiInfo { Title = "My Api", Version = "v1" });
+
+    c.AddSecurityDefinition("oauth2", new OpenApiSecurityScheme
     {
-        public static void Main(string[] args)
+
+        Type = SecuritySchemeType.OAuth2,
+
+        Flows = new OpenApiOAuthFlows
         {
-            var builder = WebApplication.CreateBuilder(args);
+            Password = new OpenApiOAuthFlow
+            {
+                TokenUrl = new Uri("/v1/auth", UriKind.Relative),
+                Extensions = new Dictionary<string, IOpenApiExtension>
+                                {
+                                    { "returnSecureToken", new OpenApiBoolean(true) },
+                                },
 
-            // Add services to the container.
+            }
 
-            builder.Services.AddControllers();
-            // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
-            builder.Services.AddEndpointsApiExplorer();
-            builder.Services.AddSwaggerGen();
-
-            var app = builder.Build();
-            app.Urls.Add("http://s2tek.net:7100");
-            app.Urls.Add("https://localhost:7100");
-            
-            // Configure the HTTP request pipeline.
-            app.UseSwagger();
-            app.UseSwaggerUI();
-
-            app.UseHttpsRedirection();
-
-            app.UseAuthorization();
-
-
-            app.MapControllers();
-
-            app.Run();
         }
-    }
-}
+    });
+    c.OperationFilter<AuthorizeCheckOperationFilter>();
+});
+
+var app = builder.Build();
+app.Urls.Add("https://s2tek.net:7100");
+app.Urls.Add("https://localhost:7100");
+app.UseSwagger();
+app.UseSwaggerUI();
+app.UseHttpsRedirection();
+app.UseSwagger()
+          .UseSwaggerUI(c =>
+          {
+              c.SwaggerEndpoint($"/swagger/v1/swagger.json", "Chivado Api");
+          });
+app.UseAuthorization();
+
+app.MapControllers();
+
+app.Run();

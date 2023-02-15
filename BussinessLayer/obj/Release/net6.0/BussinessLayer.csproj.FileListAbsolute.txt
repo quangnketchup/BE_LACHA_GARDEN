@@ -1,0 +1,12 @@
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\BussinessLayer\bin\Release\net6.0\BussinessLayer.deps.json
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\BussinessLayer\bin\Release\net6.0\BussinessLayer.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\BussinessLayer\bin\Release\net6.0\BussinessLayer.pdb
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\BussinessLayer\obj\Release\net6.0\BussinessLayer.csproj.AssemblyReference.cache
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\BussinessLayer\obj\Release\net6.0\BussinessLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\BussinessLayer\obj\Release\net6.0\BussinessLayer.AssemblyInfoInputs.cache
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\BussinessLayer\obj\Release\net6.0\BussinessLayer.AssemblyInfo.cs
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\BussinessLayer\obj\Release\net6.0\BussinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\BussinessLayer\obj\Release\net6.0\BussinessLayer.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\BussinessLayer\obj\Release\net6.0\refint\BussinessLayer.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\BussinessLayer\obj\Release\net6.0\BussinessLayer.pdb
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\BussinessLayer\obj\Release\net6.0\ref\BussinessLayer.dll
