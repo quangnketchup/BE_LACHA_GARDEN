@@ -12,7 +12,7 @@ namespace LachaGarden.Services
         {
             FirebaseApp.Create(new AppOptions
             {
-                Credential = GoogleCredential.FromFile(@"C:\Users\quang\source\ssh-quang\lachagarden-firebase-adminsdk-l2ma2-516f5b17d7.json")
+                Credential = GoogleCredential.FromFile(@"Auth.json")
             });
 
 
@@ -20,10 +20,17 @@ namespace LachaGarden.Services
             var message = new Message()
             {
                 Data = new Dictionary<string, string>()
-    {
-        { "score", "850" },
-        { "time", "1:00" },
-    },
+                {
+                    { "score", "850" },
+                    { "time", "1:00" },
+                },
+                
+                Notification = new FirebaseAdmin.Messaging.Notification()
+                {
+
+                    Title = noti.Title,
+                    Body = noti.Body,
+                },
                 Token = registrationToken,
             };
 
@@ -37,12 +44,19 @@ namespace LachaGarden.Services
         {
             var message = new MulticastMessage()
             {
-                Tokens = registrationTokens,
                 Data = new Dictionary<string, string>()
-    {
-        { "score", "850" },
-        { "time", "2:45" },
-    },
+                {
+                    { "score", "850" },
+                    { "time", "1:00" },
+                },
+
+                Notification = new FirebaseAdmin.Messaging.Notification()
+                {
+
+                    Title = noti.Title,
+                    Body = noti.Body,
+                },
+                Tokens = registrationTokens,
             };
 
             var response = await FirebaseMessaging.DefaultInstance.SendMulticastAsync(message);

@@ -8,11 +8,13 @@ namespace LachaGarden.Controllers
     [ApiController]
     public class PushNotificationController : ControllerBase
     {
+        string token = "dppkleBtS6CtMSFGPSQQCg:APA91bFnCKFeiF_T0T5Y90fbqpVK2i_Vj2UcXHDMEGekDWj_OTiZZsaUhhWbEZhytMseKKjWKlWtXuFzxnsfLd-H96OIjW5TD0lHWBZ8wi-Vl9y8JnUIREYVYudJA4j6kpIRWjDATbgz";
         [HttpPost]
         public async void sendMessage(Notification fcmNotiMessage)
         {
             PushNotification pushNotification = new PushNotification();
-            pushNotification.SendSigleMessage(fcmNotiMessage, "dxzO7xy8SpalAp5DQSZpKl:APA91bHS5oOu_VxFk-u1y6lzyvyoQx4tFLT69t4nFkr9X1bk0Uau-fMcTIzxp4nqg-OfmMQz5__AZof-0GHKnlkH9bQ8qBHHjrwdsd4E0y-th9evZDN7bUYJ4B6vMe5EmrarLqD3H1U2");
+            pushNotification.SendSigleMessage(fcmNotiMessage, token);
+        
         }
     }
 }

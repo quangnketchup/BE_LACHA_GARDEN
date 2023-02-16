@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\quang\\source\\ssh-quang\\BE3\\BE_LACHA_GARDEN\\BussinessLayer\\BussinessLayer.csproj": {}
+    "C:\\Users\\quang\\source\\ssh-quang\\BE3\\LachaGarden-file chinh\\BussinessLayer\\BussinessLayer.csproj": {}
   },
   "projects": {
-    "C:\\Users\\quang\\source\\ssh-quang\\BE3\\BE_LACHA_GARDEN\\BussinessLayer\\BussinessLayer.csproj": {
+    "C:\\Users\\quang\\source\\ssh-quang\\BE3\\LachaGarden-file chinh\\BussinessLayer\\BussinessLayer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\quang\\source\\ssh-quang\\BE3\\BE_LACHA_GARDEN\\BussinessLayer\\BussinessLayer.csproj",
+        "projectUniqueName": "C:\\Users\\quang\\source\\ssh-quang\\BE3\\LachaGarden-file chinh\\BussinessLayer\\BussinessLayer.csproj",
         "projectName": "BussinessLayer",
-        "projectPath": "C:\\Users\\quang\\source\\ssh-quang\\BE3\\BE_LACHA_GARDEN\\BussinessLayer\\BussinessLayer.csproj",
+        "projectPath": "C:\\Users\\quang\\source\\ssh-quang\\BE3\\LachaGarden-file chinh\\BussinessLayer\\BussinessLayer.csproj",
         "packagesPath": "C:\\Users\\quang\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\quang\\source\\ssh-quang\\BE3\\BE_LACHA_GARDEN\\BussinessLayer\\obj\\",
+        "outputPath": "C:\\Users\\quang\\source\\ssh-quang\\BE3\\LachaGarden-file chinh\\BussinessLayer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

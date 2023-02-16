@@ -5817,11 +5817,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\quang\\source\\ssh-quang\\BE3\\BE_LACHA_GARDEN\\LachaGarden\\LachaGarden.csproj",
+      "projectUniqueName": "C:\\Users\\quang\\source\\ssh-quang\\BE3\\LachaGarden-file chinh\\LachaGarden\\LachaGarden.csproj",
       "projectName": "LachaGarden",
-      "projectPath": "C:\\Users\\quang\\source\\ssh-quang\\BE3\\BE_LACHA_GARDEN\\LachaGarden\\LachaGarden.csproj",
+      "projectPath": "C:\\Users\\quang\\source\\ssh-quang\\BE3\\LachaGarden-file chinh\\LachaGarden\\LachaGarden.csproj",
       "packagesPath": "C:\\Users\\quang\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\quang\\source\\ssh-quang\\BE3\\BE_LACHA_GARDEN\\LachaGarden\\obj\\",
+      "outputPath": "C:\\Users\\quang\\source\\ssh-quang\\BE3\\LachaGarden-file chinh\\LachaGarden\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"

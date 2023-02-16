@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Az2KIF9fpU9Wn8tMuyl29GfUEdD2AZuyTrQPrUz4guZ6EpNtdc4AYKz6sS4v20uJOO1iDEKdNnBLdEAcF6oHvw==",
+  "dgSpecHash": "TKp+iOimMBDV1auiRca77AcUHBCpkWvDyYZCQOXpq2yIVi47xi7j167xnrtakmKxrapZXorY2k5Ilua3VzX9ng==",
   "success": true,
-  "projectFilePath": "C:\\Users\\quang\\source\\ssh-quang\\BE3\\BE_LACHA_GARDEN\\LachaGarden\\LachaGarden.csproj",
+  "projectFilePath": "C:\\Users\\quang\\source\\ssh-quang\\BE3\\LachaGarden-file chinh\\LachaGarden\\LachaGarden.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\quang\\.nuget\\packages\\firebase.auth\\1.0.0\\firebase.auth.1.0.0.nupkg.sha512",
     "C:\\Users\\quang\\.nuget\\packages\\firebaseadmin\\2.0.0\\firebaseadmin.2.0.0.nupkg.sha512",
