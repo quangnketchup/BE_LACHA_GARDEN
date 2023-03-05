@@ -3,4 +3,9 @@
 https://go.microsoft.com/fwlink/?LinkID=208121.
 -->
 <Project>
+  <PropertyGroup>
+    <_PublishTargetUrl>C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Release\net6.0\publish\</_PublishTargetUrl>
+    <History>True|2023-02-24T04:00:16.1874927Z;True|2023-02-24T10:55:15.9370413+07:00;True|2023-02-24T10:53:17.9915001+07:00;True|2023-02-24T10:48:57.8974719+07:00;True|2023-02-15T20:54:47.9971433+07:00;True|2023-02-15T20:51:41.5767183+07:00;</History>
+    <LastFailureDetails />
+  </PropertyGroup>
 </Project>

@@ -2,6 +2,7 @@
 using FirebaseAdmin.Messaging;
 using Google.Apis.Auth.OAuth2;
 using Microsoft.AspNetCore.Builder.Extensions;
+using LachaGarden.Models;
 
 namespace LachaGarden.Services
 {
@@ -23,7 +24,7 @@ namespace LachaGarden.Services
                     { "score", "850" },
                     { "time", "1:00" },
                 },
-
+                
                 Notification = new FirebaseAdmin.Messaging.Notification()
                 {
 

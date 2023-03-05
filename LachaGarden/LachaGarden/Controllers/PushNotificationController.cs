@@ -14,7 +14,7 @@ namespace LachaGarden.Controllers
         {
             PushNotification pushNotification = new PushNotification();
             pushNotification.SendSigleMessage(fcmNotiMessage, token);
-
+        
         }
     }
 }

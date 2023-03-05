@@ -13,8 +13,8 @@ namespace LachaGarden.Controllers
         private static string Bucket = "lachagarden.appspot.com";
         private static string AuthEmail = "quangnketchup@gmail.com";
         private static string AuthPassword = "quangnketchup";
-
-        [HttpPost, Authorize]
+        
+        [HttpPost(Name = "upload")]
         public async Task<ActionResult> UploadImageFirebase(IFormFile image)
         {
             string link = "";

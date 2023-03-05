@@ -1,114 +1,488 @@
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\appsettings.json
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\LachaGarden.exe
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\LachaGarden.deps.json
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\LachaGarden.runtimeconfig.json
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\LachaGarden.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\LachaGarden.pdb
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.OpenApi.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.AssemblyReference.cache
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.AssemblyInfoInputs.cache
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.AssemblyInfo.cs
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.CoreCompileInputs.cache
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.LachaGarden.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.build.LachaGarden.props
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.LachaGarden.props
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.LachaGarden.props
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\staticwebassets.pack.json
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\staticwebassets.build.json
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\scopedcss\bundle\LachaGarden.styles.css
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.CopyComplete
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\refint\LachaGarden.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.pdb
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.genruntimeconfig.cache
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\ref\LachaGarden.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Auth.json
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Firebase.Auth.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\FirebaseAdmin.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Firebase.Storage.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Google.Api.Gax.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Google.Api.Gax.Rest.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Google.Apis.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Google.Apis.Auth.PlatformServices.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Google.Apis.Auth.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Google.Apis.Core.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\System.ServiceModel.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Newtonsoft.Json.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Scrutor.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\appsettings.Development.json
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\appsettings.json
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Auth.json
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\LachaGarden.exe
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\LachaGarden.deps.json
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\LachaGarden.runtimeconfig.json
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\LachaGarden.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\LachaGarden.pdb
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Firebase.Auth.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\FirebaseAdmin.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Firebase.Storage.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Google.Api.Gax.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Google.Api.Gax.Rest.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Google.Apis.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Google.Apis.Auth.PlatformServices.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Google.Apis.Auth.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Google.Apis.Core.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\System.ServiceModel.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.OpenApi.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Newtonsoft.Json.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Scrutor.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.AssemblyReference.cache
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.AssemblyInfoInputs.cache
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.AssemblyInfo.cs
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.CoreCompileInputs.cache
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.LachaGarden.Microsoft.AspNetCore.StaticWebAssets.props
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.build.LachaGarden.props
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.LachaGarden.props
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.LachaGarden.props
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\staticwebassets.pack.json
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\staticwebassets.build.json
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\staticwebassets.development.json
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\scopedcss\bundle\LachaGarden.styles.css
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.CopyComplete
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\refint\LachaGarden.dll
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.pdb
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.genruntimeconfig.cache
-C:\Users\quang\source\ssh-quang\BE2\LachaGarden1\LachaGarden\LachaGarden\LachaGarden\obj\Debug\net6.0\ref\LachaGarden.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\appsettings.json
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\LachaGarden.exe
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\LachaGarden.deps.json
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\LachaGarden.runtimeconfig.json
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\LachaGarden.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\LachaGarden.pdb
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.AssemblyReference.cache
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.AssemblyInfoInputs.cache
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.AssemblyInfo.cs
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.CoreCompileInputs.cache
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.LachaGarden.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.build.LachaGarden.props
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.LachaGarden.props
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.LachaGarden.props
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\obj\Debug\net6.0\scopedcss\bundle\LachaGarden.styles.css
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.CopyComplete
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\obj\Debug\net6.0\refint\LachaGarden.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.pdb
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\obj\Debug\net6.0\LachaGarden.genruntimeconfig.cache
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\obj\Debug\net6.0\ref\LachaGarden.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\Firebase.Auth.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\Firebase.Storage.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\System.ServiceModel.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\FirebaseAdmin.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\Google.Api.Gax.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\Google.Api.Gax.Rest.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\Google.Apis.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\Google.Apis.Auth.PlatformServices.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\Google.Apis.Auth.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\Google.Apis.Core.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\appsettings.json
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\LachaGarden.exe
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\LachaGarden.deps.json
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\LachaGarden.runtimeconfig.json
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\LachaGarden.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\LachaGarden.pdb
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\Firebase.Auth.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\FirebaseAdmin.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\Firebase.Storage.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\Google.Api.Gax.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\Google.Api.Gax.Rest.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\Google.Apis.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\Google.Apis.Auth.PlatformServices.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\Google.Apis.Auth.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\Google.Apis.Core.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\System.ServiceModel.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.AssemblyReference.cache
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\obj\Debug\net6.0\LachaGarden.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\obj\Debug\net6.0\LachaGarden.AssemblyInfoInputs.cache
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\obj\Debug\net6.0\LachaGarden.AssemblyInfo.cs
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.CoreCompileInputs.cache
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\obj\Debug\net6.0\LachaGarden.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\obj\Debug\net6.0\LachaGarden.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.LachaGarden.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.build.LachaGarden.props
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.LachaGarden.props
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.LachaGarden.props
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\obj\Debug\net6.0\scopedcss\bundle\LachaGarden.styles.css
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.CopyComplete
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\obj\Debug\net6.0\LachaGarden.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\obj\Debug\net6.0\refint\LachaGarden.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\obj\Debug\net6.0\LachaGarden.pdb
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\obj\Debug\net6.0\LachaGarden.genruntimeconfig.cache
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\obj\Debug\net6.0\ref\LachaGarden.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden-file chinh\LachaGarden\bin\Debug\net6.0\Auth.json
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\appsettings.json
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Auth.json
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\LachaGarden.exe
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\LachaGarden.deps.json
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\LachaGarden.runtimeconfig.json
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\LachaGarden.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\LachaGarden.pdb
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Firebase.Auth.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\FirebaseAdmin.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Firebase.Storage.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Google.Api.Gax.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Google.Api.Gax.Rest.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Google.Apis.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Google.Apis.Auth.PlatformServices.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Google.Apis.Auth.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Google.Apis.Core.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\System.ServiceModel.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.AssemblyReference.cache
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\obj\Debug\net6.0\LachaGarden.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\obj\Debug\net6.0\LachaGarden.AssemblyInfoInputs.cache
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\obj\Debug\net6.0\LachaGarden.AssemblyInfo.cs
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.CoreCompileInputs.cache
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\obj\Debug\net6.0\LachaGarden.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\obj\Debug\net6.0\LachaGarden.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.LachaGarden.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.build.LachaGarden.props
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.LachaGarden.props
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.LachaGarden.props
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\obj\Debug\net6.0\scopedcss\bundle\LachaGarden.styles.css
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.CopyComplete
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\obj\Debug\net6.0\LachaGarden.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\obj\Debug\net6.0\refint\LachaGarden.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\obj\Debug\net6.0\LachaGarden.pdb
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\obj\Debug\net6.0\LachaGarden.genruntimeconfig.cache
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\obj\Debug\net6.0\ref\LachaGarden.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Scrutor.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\BussinessLayer.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN\LachaGarden\bin\Debug\net6.0\BussinessLayer.pdb
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\appsettings.json
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Auth.json
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\LachaGarden.exe
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\LachaGarden.deps.json
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\LachaGarden.runtimeconfig.json
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\LachaGarden.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\LachaGarden.pdb
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Firebase.Auth.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\FirebaseAdmin.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Firebase.Storage.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Google.Api.Gax.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Google.Api.Gax.Rest.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Google.Apis.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Google.Apis.Auth.PlatformServices.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Google.Apis.Auth.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Google.Apis.Core.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.ServiceModel.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Scrutor.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\BussinessLayer.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\BussinessLayer.pdb
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.AssemblyReference.cache
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.AssemblyInfoInputs.cache
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.AssemblyInfo.cs
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.CoreCompileInputs.cache
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.LachaGarden.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.build.LachaGarden.props
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.LachaGarden.props
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.LachaGarden.props
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\scopedcss\bundle\LachaGarden.styles.css
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.CopyComplete
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\refint\LachaGarden.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.pdb
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.genruntimeconfig.cache
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\ref\LachaGarden.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\AspNetCore.Firebase.Authentication.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.AspNetCore.Server.Kestrel.Https.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\linux-arm\native\libuv.so
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\linux-arm64\native\libuv.so
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\linux-armel\native\libuv.so
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\linux-x64\native\libuv.so
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\osx\native\libuv.dylib
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win-arm\native\libuv.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win-x64\native\libuv.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win-x86\native\libuv.dll
+C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\appsettings.Development.json
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\appsettings.json
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Auth.json
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\LachaGarden.exe
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\LachaGarden.deps.json
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\LachaGarden.runtimeconfig.json
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\LachaGarden.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\LachaGarden.pdb
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\AspNetCore.Firebase.Authentication.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Firebase.Auth.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\FirebaseAdmin.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Firebase.Storage.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Google.Api.Gax.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Google.Api.Gax.Rest.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Google.Apis.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Google.Apis.Auth.PlatformServices.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Google.Apis.Auth.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Google.Apis.Core.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.AspNetCore.Server.Kestrel.Https.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.ServiceModel.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.OpenApi.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Newtonsoft.Json.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Scrutor.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.Drawing.Common.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.Runtime.Caching.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.Security.Permissions.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.Windows.Extensions.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\linux-arm\native\libuv.so
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\linux-arm64\native\libuv.so
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\linux-armel\native\libuv.so
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\linux-x64\native\libuv.so
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\osx\native\libuv.dylib
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win-arm\native\libuv.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win-x64\native\libuv.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win-x86\native\libuv.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\BussinessLayer.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\DataAccessLayer.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\BussinessLayer.pdb
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\DataAccessLayer.pdb
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.AssemblyReference.cache
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.GeneratedMSBuildEditorConfig.editorconfig
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.AssemblyInfoInputs.cache
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.AssemblyInfo.cs
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.CoreCompileInputs.cache
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.MvcApplicationPartsAssemblyInfo.cs
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.MvcApplicationPartsAssemblyInfo.cache
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.LachaGarden.Microsoft.AspNetCore.StaticWebAssets.props
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.build.LachaGarden.props
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.LachaGarden.props
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.LachaGarden.props
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\staticwebassets.pack.json
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\staticwebassets.build.json
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\staticwebassets.development.json
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\scopedcss\bundle\LachaGarden.styles.css
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.CopyComplete
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\refint\LachaGarden.dll
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.pdb
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.genruntimeconfig.cache
+D:\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\ref\LachaGarden.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\appsettings.Development.json
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\appsettings.json
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Auth.json
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\LachaGarden.exe
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\LachaGarden.deps.json
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\LachaGarden.runtimeconfig.json
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\LachaGarden.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\LachaGarden.pdb
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\AspNetCore.Firebase.Authentication.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Firebase.Auth.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\FirebaseAdmin.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Firebase.Storage.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Google.Api.Gax.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Google.Api.Gax.Rest.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Google.Apis.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Google.Apis.Auth.PlatformServices.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Google.Apis.Auth.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Google.Apis.Core.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.AspNetCore.Server.Kestrel.Https.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.AspNetCore.Server.Kestrel.Transport.Libuv.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.Data.SqlClient.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Abstractions.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.Relational.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.EntityFrameworkCore.SqlServer.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.Identity.Client.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Abstractions.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.JsonWebTokens.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Logging.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.IdentityModel.Tokens.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.ServiceModel.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Newtonsoft.Json.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Scrutor.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.Filters.Abstractions.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.Configuration.ConfigurationManager.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.Drawing.Common.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.IdentityModel.Tokens.Jwt.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.Runtime.Caching.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.Security.Permissions.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\System.Windows.Extensions.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\linux-arm\native\libuv.so
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\linux-arm64\native\libuv.so
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\linux-armel\native\libuv.so
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\linux-x64\native\libuv.so
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\osx\native\libuv.dylib
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win-arm\native\libuv.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win-x64\native\libuv.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win-x86\native\libuv.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.1\Microsoft.Data.SqlClient.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\Microsoft.Win32.SystemEvents.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Drawing.Common.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\BussinessLayer.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\DataAccessLayer.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\BussinessLayer.pdb
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\bin\Debug\net6.0\DataAccessLayer.pdb
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.AssemblyReference.cache
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.AssemblyInfoInputs.cache
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.AssemblyInfo.cs
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.CoreCompileInputs.cache
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.LachaGarden.Microsoft.AspNetCore.StaticWebAssets.props
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.build.LachaGarden.props
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.LachaGarden.props
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.LachaGarden.props
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\staticwebassets.pack.json
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\staticwebassets.build.json
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\staticwebassets.development.json
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\scopedcss\bundle\LachaGarden.styles.css
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.csproj.CopyComplete
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\refint\LachaGarden.dll
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.pdb
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\LachaGarden.genruntimeconfig.cache
+C:\Users\quang\Downloads\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\obj\Debug\net6.0\ref\LachaGarden.dll

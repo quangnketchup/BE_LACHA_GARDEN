@@ -1,0 +1,3 @@
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\BussinessLayer\bin\Release\net6.0\publish\BussinessLayer.dll
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\BussinessLayer\bin\Release\net6.0\publish\BussinessLayer.deps.json
+C:\Users\quang\source\ssh-quang\BE3\LachaGarden\BussinessLayer\bin\Release\net6.0\publish\BussinessLayer.pdb
