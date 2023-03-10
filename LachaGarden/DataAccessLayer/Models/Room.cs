@@ -11,7 +11,7 @@ namespace DataAccessLayer.Models
         public double? Width { get; set; }
         public int? Status { get; set; }
         public int? BuildingId { get; set; }
-        public int? CustomerId { get; set; }
+        public string CustomerId { get; set; }
 
         public virtual Building Building { get; set; }
         public virtual Customer Customer { get; set; }

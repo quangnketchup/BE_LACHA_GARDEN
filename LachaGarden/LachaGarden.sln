@@ -7,7 +7,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LachaGarden", "LachaGarden\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BussinessLayer", "BussinessLayer\BussinessLayer.csproj", "{B834335E-3867-4AF0-A169-1915DFB923AE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{F673C6AE-025C-4BBA-BCA9-BEF8FEBB6970}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataAccessLayer", "DataAccessLayer\DataAccessLayer.csproj", "{DB6B268E-2E82-4182-9381-62EDACCA8AD3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -23,10 +23,10 @@ Global
 		{B834335E-3867-4AF0-A169-1915DFB923AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B834335E-3867-4AF0-A169-1915DFB923AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B834335E-3867-4AF0-A169-1915DFB923AE}.Release|Any CPU.Build.0 = Release|Any CPU
-		{F673C6AE-025C-4BBA-BCA9-BEF8FEBB6970}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{F673C6AE-025C-4BBA-BCA9-BEF8FEBB6970}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{F673C6AE-025C-4BBA-BCA9-BEF8FEBB6970}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{F673C6AE-025C-4BBA-BCA9-BEF8FEBB6970}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DB6B268E-2E82-4182-9381-62EDACCA8AD3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DB6B268E-2E82-4182-9381-62EDACCA8AD3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DB6B268E-2E82-4182-9381-62EDACCA8AD3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DB6B268E-2E82-4182-9381-62EDACCA8AD3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

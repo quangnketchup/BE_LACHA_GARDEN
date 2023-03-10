@@ -54,7 +54,7 @@ namespace BussinessLayer.Dao
         }
 
         //-----------------------
-        public Customer GetCustomerByID(int CustomerID)
+        public Customer GetCustomerByID(string CustomerID)
         {
             Customer customer = null;
             try
@@ -117,7 +117,7 @@ namespace BussinessLayer.Dao
 
         //-------------------------
 
-        public void Remove(int customerId)
+        public void Remove(string customerId)
         {
             try
             {

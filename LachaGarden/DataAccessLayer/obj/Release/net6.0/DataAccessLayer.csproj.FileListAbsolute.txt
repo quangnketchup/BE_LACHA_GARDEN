@@ -1,0 +1,14 @@
+D:\ky7\10_3\BE_LACHA_GARDEN\LachaGarden\DataAccessLayer\bin\Release\net6.0\DataAccessLayer.deps.json
+D:\ky7\10_3\BE_LACHA_GARDEN\LachaGarden\DataAccessLayer\bin\Release\net6.0\DataAccessLayer.runtimeconfig.json
+D:\ky7\10_3\BE_LACHA_GARDEN\LachaGarden\DataAccessLayer\bin\Release\net6.0\DataAccessLayer.dll
+D:\ky7\10_3\BE_LACHA_GARDEN\LachaGarden\DataAccessLayer\bin\Release\net6.0\DataAccessLayer.pdb
+D:\ky7\10_3\BE_LACHA_GARDEN\LachaGarden\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.csproj.AssemblyReference.cache
+D:\ky7\10_3\BE_LACHA_GARDEN\LachaGarden\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.GeneratedMSBuildEditorConfig.editorconfig
+D:\ky7\10_3\BE_LACHA_GARDEN\LachaGarden\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.AssemblyInfoInputs.cache
+D:\ky7\10_3\BE_LACHA_GARDEN\LachaGarden\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.AssemblyInfo.cs
+D:\ky7\10_3\BE_LACHA_GARDEN\LachaGarden\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.csproj.CoreCompileInputs.cache
+D:\ky7\10_3\BE_LACHA_GARDEN\LachaGarden\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.dll
+D:\ky7\10_3\BE_LACHA_GARDEN\LachaGarden\DataAccessLayer\obj\Release\net6.0\refint\DataAccessLayer.dll
+D:\ky7\10_3\BE_LACHA_GARDEN\LachaGarden\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.pdb
+D:\ky7\10_3\BE_LACHA_GARDEN\LachaGarden\DataAccessLayer\obj\Release\net6.0\DataAccessLayer.genruntimeconfig.cache
+D:\ky7\10_3\BE_LACHA_GARDEN\LachaGarden\DataAccessLayer\obj\Release\net6.0\ref\DataAccessLayer.dll

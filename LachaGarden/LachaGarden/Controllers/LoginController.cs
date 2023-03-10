@@ -14,7 +14,7 @@ namespace LachaGarden.Controllers
     public class LoginController : Controller
     {
         private readonly lachagardenContext db;
-
+        /*
         public IActionResult Login()
         {
             return View();
@@ -48,7 +48,7 @@ namespace LachaGarden.Controllers
                     {
                         isCustomer = true;
                         HttpContext.Session.SetString("isAdmin", "false");
-                        HttpContext.Session.SetInt32("id", i.Id);
+                        HttpContext.Session.SetString("id", i.Id);
                         return RedirectToAction("Index", "Customer");
 
                     }
@@ -78,5 +78,6 @@ namespace LachaGarden.Controllers
             HttpContext.Session.Remove("ACCOUNT");
             return RedirectToAction("Index");
         }
+        */
     }
 }

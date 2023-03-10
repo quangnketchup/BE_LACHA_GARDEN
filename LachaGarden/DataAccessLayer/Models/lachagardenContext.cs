@@ -26,17 +26,17 @@ namespace DataAccessLayer.Models
         public virtual DbSet<Result> Results { get; set; }
         public virtual DbSet<Role> Roles { get; set; }
         public virtual DbSet<Room> Rooms { get; set; }
-        public virtual DbSet<Technical> Technicals { get; set; }
         public virtual DbSet<Tree> Trees { get; set; }
         public virtual DbSet<TreeCare> TreeCares { get; set; }
         public virtual DbSet<TreeType> TreeTypes { get; set; }
+        public virtual DbSet<User> Users { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
             if (!optionsBuilder.IsConfigured)
             {
 #warning To protect potentially sensitive information in your connection string, you should move it out of source code. You can avoid scaffolding the connection string by using the Name= syntax to read it from configuration - see https://go.microsoft.com/fwlink/?linkid=2131148. For more guidance on storing connection strings, see http://go.microsoft.com/fwlink/?LinkId=723263.
-                optionsBuilder.UseSqlServer("server =quangnketchup\\SQLEXPRESS; database = lachagarden;uid=sa;pwd=Quienvi204;MultipleActiveResultSets=True;");
+                optionsBuilder.UseSqlServer("Server=quangnketchup\\SQLEXPRESS;Database=lachagarden;User ID=sa;Password=Quienvi204;MultipleActiveResultSets=True;");
             }
         }
 
@@ -71,41 +71,42 @@ namespace DataAccessLayer.Models
             {
                 entity.ToTable("Customer");
 
-                entity.Property(e => e.Id).HasColumnName("ID");
+                entity.Property(e => e.Id)
+                    .HasMaxLength(50)
+                    .HasColumnName("ID");
 
                 entity.Property(e => e.FullName).HasMaxLength(50);
 
                 entity.Property(e => e.Gmail).HasMaxLength(50);
 
+                entity.Property(e => e.Password).HasMaxLength(50);
+
                 entity.Property(e => e.Phone).HasColumnType("decimal(10, 0)");
-
-                entity.Property(e => e.RoleId).HasColumnName("RoleID");
-
-                entity.HasOne(d => d.Role)
-                    .WithMany(p => p.Customers)
-                    .HasForeignKey(d => d.RoleId)
-                    .HasConstraintName("FK_Customer_Role");
             });
 
             modelBuilder.Entity<Garden>(entity =>
             {
                 entity.ToTable("Garden");
 
-                entity.Property(e => e.Id)
-                    .ValueGeneratedOnAdd()
-                    .HasColumnName("ID");
+                entity.HasIndex(e => e.RoomId, "Unique_CustomerID")
+                    .IsUnique();
+
+                entity.Property(e => e.Id).HasColumnName("ID");
+
+                entity.Property(e => e.DateTime).HasColumnType("datetime");
 
                 entity.Property(e => e.GardenPackageId).HasColumnName("GardenPackageID");
+
+                entity.Property(e => e.RoomId).HasColumnName("RoomID");
 
                 entity.HasOne(d => d.GardenPackage)
                     .WithMany(p => p.Gardens)
                     .HasForeignKey(d => d.GardenPackageId)
                     .HasConstraintName("FK_Garden_GardenPackage");
 
-                entity.HasOne(d => d.IdNavigation)
+                entity.HasOne(d => d.Room)
                     .WithOne(p => p.Garden)
-                    .HasForeignKey<Garden>(d => d.Id)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasForeignKey<Garden>(d => d.RoomId)
                     .HasConstraintName("FK_Garden_Room");
             });
 
@@ -183,7 +184,10 @@ namespace DataAccessLayer.Models
 
                 entity.Property(e => e.BuildingId).HasColumnName("BuildingID");
 
-                entity.Property(e => e.CustomerId).HasColumnName("CustomerID");
+                entity.Property(e => e.CustomerId)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .HasColumnName("CustomerID");
 
                 entity.Property(e => e.RoomNumber).HasMaxLength(50);
 
@@ -195,27 +199,8 @@ namespace DataAccessLayer.Models
                 entity.HasOne(d => d.Customer)
                     .WithMany(p => p.Rooms)
                     .HasForeignKey(d => d.CustomerId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("FK_Room_Customer");
-            });
-
-            modelBuilder.Entity<Technical>(entity =>
-            {
-                entity.ToTable("Technical");
-
-                entity.Property(e => e.Id).HasColumnName("ID");
-
-                entity.Property(e => e.Gmail).HasMaxLength(50);
-
-                entity.Property(e => e.NameTech).HasMaxLength(50);
-
-                entity.Property(e => e.Phone).HasColumnType("decimal(10, 0)");
-
-                entity.Property(e => e.RoleId).HasColumnName("RoleID");
-
-                entity.HasOne(d => d.Role)
-                    .WithMany(p => p.Technicals)
-                    .HasForeignKey(d => d.RoleId)
-                    .HasConstraintName("FK_Technical_Role");
             });
 
             modelBuilder.Entity<Tree>(entity =>
@@ -251,17 +236,21 @@ namespace DataAccessLayer.Models
 
                 entity.Property(e => e.RequestId).HasColumnName("RequestID");
 
-                entity.Property(e => e.TechnicalId).HasColumnName("TechnicalID");
+                entity.Property(e => e.UserId)
+                    .IsRequired()
+                    .HasMaxLength(50)
+                    .HasColumnName("UserID");
 
                 entity.HasOne(d => d.Request)
                     .WithMany(p => p.TreeCares)
                     .HasForeignKey(d => d.RequestId)
                     .HasConstraintName("FK_TreeCare_Request");
 
-                entity.HasOne(d => d.Technical)
+                entity.HasOne(d => d.User)
                     .WithMany(p => p.TreeCares)
-                    .HasForeignKey(d => d.TechnicalId)
-                    .HasConstraintName("FK_TreeCare_Technical");
+                    .HasForeignKey(d => d.UserId)
+                    .OnDelete(DeleteBehavior.ClientSetNull)
+                    .HasConstraintName("FK_TreeCare_User");
             });
 
             modelBuilder.Entity<TreeType>(entity =>
@@ -271,6 +260,30 @@ namespace DataAccessLayer.Models
                 entity.Property(e => e.Id).HasColumnName("ID");
 
                 entity.Property(e => e.NameTreeType).HasMaxLength(50);
+            });
+
+            modelBuilder.Entity<User>(entity =>
+            {
+                entity.ToTable("User");
+
+                entity.Property(e => e.Id)
+                    .HasMaxLength(50)
+                    .HasColumnName("ID");
+
+                entity.Property(e => e.Gmail).HasMaxLength(50);
+
+                entity.Property(e => e.NameTech).HasMaxLength(50);
+
+                entity.Property(e => e.Password).HasMaxLength(50);
+
+                entity.Property(e => e.Phone).HasColumnType("decimal(10, 0)");
+
+                entity.Property(e => e.RoleId).HasColumnName("RoleID");
+
+                entity.HasOne(d => d.Role)
+                    .WithMany(p => p.Users)
+                    .HasForeignKey(d => d.RoleId)
+                    .HasConstraintName("FK_User_Role");
             });
 
             OnModelCreatingPartial(modelBuilder);

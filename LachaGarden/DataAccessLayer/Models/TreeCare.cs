@@ -13,11 +13,11 @@ namespace DataAccessLayer.Models
         public int Id { get; set; }
         public string Name { get; set; }
         public int? Status { get; set; }
-        public int? TechnicalId { get; set; }
+        public string UserId { get; set; }
         public int? RequestId { get; set; }
 
         public virtual Request Request { get; set; }
-        public virtual Technical Technical { get; set; }
+        public virtual User User { get; set; }
         public virtual ICollection<Result> Results { get; set; }
     }
 }

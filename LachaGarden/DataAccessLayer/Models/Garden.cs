@@ -13,9 +13,11 @@ namespace DataAccessLayer.Models
         public int Id { get; set; }
         public int? Status { get; set; }
         public int? GardenPackageId { get; set; }
+        public DateTime? DateTime { get; set; }
+        public int? RoomId { get; set; }
 
         public virtual GardenPackage GardenPackage { get; set; }
-        public virtual Room IdNavigation { get; set; }
+        public virtual Room Room { get; set; }
         public virtual ICollection<Request> Requests { get; set; }
     }
 }

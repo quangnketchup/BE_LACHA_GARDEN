@@ -7,14 +7,12 @@ namespace DataAccessLayer.Models
     {
         public Role()
         {
-            Customers = new HashSet<Customer>();
-            Technicals = new HashSet<Technical>();
+            Users = new HashSet<User>();
         }
 
         public int RoleId { get; set; }
         public string RoleName { get; set; }
 
-        public virtual ICollection<Customer> Customers { get; set; }
-        public virtual ICollection<Technical> Technicals { get; set; }
+        public virtual ICollection<User> Users { get; set; }
     }
 }

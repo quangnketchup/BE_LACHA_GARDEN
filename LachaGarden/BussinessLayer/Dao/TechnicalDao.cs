@@ -9,6 +9,7 @@ namespace BussinessLayer.Dao
 {
     public class TechnicalDao
     {
+        /*
         //-----------------------
         lachagardenContext db = new lachagardenContext();
         private static TechnicalDao instance = null;
@@ -155,5 +156,6 @@ namespace BussinessLayer.Dao
             }
             return filtered;
         }
+        */
     }
 }

@@ -10,6 +10,7 @@ using Microsoft.IdentityModel.Tokens;
 using Microsoft.OpenApi.Any;
 using Microsoft.OpenApi.Interfaces;
 using Microsoft.OpenApi.Models;
+using Newtonsoft.Json;
 using Swashbuckle.AspNetCore.Filters;
 using System.Text;
 
@@ -27,6 +28,8 @@ namespace LachaGarden
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            // Add services to the container.
+            
             // khai bao controller
             services.AddScoped<IGardenPackageRepository, GardenPackageRepository>();
             services.AddScoped<IPackageTypeRepository, PackageTypeRepository>();
@@ -35,7 +38,16 @@ namespace LachaGarden
             services.AddScoped<IRoomRepository, RoomRepository> ();
             services.AddScoped<IBuildingRepository, BuildingRepository> ();
             services.AddScoped<IAreaRepository, AreaRepository> ();
-
+            services.AddScoped<IGardenRepository, GardenRepository> ();
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAll", builder =>
+                {
+                    builder.AllowAnyOrigin()
+                           .AllowAnyHeader()
+                           .AllowAnyMethod();
+                });
+            });
             // Add Swagger support
             services.AddSwaggerGen(c =>
             {
@@ -67,10 +79,6 @@ namespace LachaGarden
             });
             // Add controllers
             services.AddControllers();
-            FirebaseApp.Create(new AppOptions
-            {
-                Credential = GoogleCredential.FromFile(@"C:\Users\quang\OneDrive\Desktop\BE_LACHA_GARDEN - Copy - Copy (2)\LachaGarden\Auth.json")
-            });
             // firebase auth
             services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
             .AddJwtBearer(opt =>
@@ -103,8 +111,6 @@ namespace LachaGarden
 
             app.UseRouting();
 
-            app.UseCors("NgOrigins");
-
             app.UseAuthentication();
 
             app.UseAuthorization();
@@ -115,7 +121,7 @@ namespace LachaGarden
             {
                 c.SwaggerEndpoint($"/swagger/v1/swagger.json", "My Api v1");
             });
-
+            app.UseCors("AllowAll");
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();

@@ -41,15 +41,11 @@ namespace LachaGarden.CRUDControllers
             }
             return Ok(gardenPackage);
         }
-        private UploadFile fileUpload;
 
         // POST: api/GardenPackage/create
         [HttpPost("create")]
         public async Task<ActionResult> Post([FromBody] GardenPackageDTO gardenPackage)
         {
-            fileUpload = new UploadFile();
-            IFormFile image = new FormFile(new MemoryStream(Encoding.UTF8.GetBytes(gardenPackage.Image)), 0, gardenPackage.Image.Length, null, Path.GetFileName(gardenPackage.Image));
-            await fileUpload.UploadImageFirebase(image);
             if (ModelState.IsValid)
             {
                 GardenPackage newGardenPackage = new GardenPackage
@@ -60,7 +56,7 @@ namespace LachaGarden.CRUDControllers
                     Width = gardenPackage.Width,
                     Description = gardenPackage.Description,
                     Price = gardenPackage.Price,
-                    Status = gardenPackage.Status,
+                    Status = 1,
                     PackageTypeId = gardenPackage.PackageTypeId,
                 };
 

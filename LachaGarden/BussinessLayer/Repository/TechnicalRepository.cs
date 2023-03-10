@@ -11,6 +11,7 @@ namespace BussinessLayer.Repository
 {
     internal class TechnicalRepository : ITechnicalRepository
     {
+        /*
         public IEnumerable<Technical> GetFiltered(string tag) => TechnicalDao.Instance.GetFilteredTechnical(tag);
 
         public Technical GetTechnicalByID(int TechnicalID) => TechnicalDao.Instance.GetTechnicalByID(TechnicalID);
@@ -22,5 +23,6 @@ namespace BussinessLayer.Repository
         public void RemoveTechnical(int TechnicalId) => TechnicalDao.Instance.Remove(TechnicalId);
 
         public void UpdateTechnical(Technical technical) => TechnicalDao.Instance.Update(technical);
+        */
     }
 }
