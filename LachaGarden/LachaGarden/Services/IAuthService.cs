@@ -1,5 +1,4 @@
-﻿using Google.Apis.Auth;
-using LachaGarden.Models;
+﻿using LachaGarden.Models;
 
 namespace LachaGarden.Services
 {
@@ -7,6 +6,6 @@ namespace LachaGarden.Services
     {
         Task<AuthDTO> Authenticate(string username, string password);
 
-        Task<AuthDTO> Authenticate(GoogleJsonWebSignature.Payload googlePayload);
+        //Task<AuthDTO> Authenticate(GoogleJsonWebSignature.Payload googlePayload);
     }
 }

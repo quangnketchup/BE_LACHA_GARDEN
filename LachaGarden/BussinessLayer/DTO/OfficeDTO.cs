@@ -1,9 +1,4 @@
 ﻿using DataAccessLayer.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BussinessLayer.DTO
 {
@@ -13,6 +8,7 @@ namespace BussinessLayer.DTO
         {
             Users = new HashSet<User>();
         }
+
         public int Id { get; set; }
         public string NameTech { get; set; }
         public string Gmail { get; set; }

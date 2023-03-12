@@ -1,5 +1,4 @@
 ﻿using DataAccessLayer.Models;
-using System.Diagnostics.Metrics;
 
 namespace LachaGarden
 {
@@ -13,6 +12,5 @@ namespace LachaGarden
             var adminDefault = config.GetSection("AdminAccount").Get<Customer>();
             return adminDefault;
         }
-
     }
 }

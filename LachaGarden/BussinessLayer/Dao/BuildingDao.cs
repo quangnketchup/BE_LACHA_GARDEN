@@ -1,19 +1,19 @@
 ﻿using DataAccessLayer.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BussinessLayer.Dao
 {
     internal class BuildingDao
     {
         //-----------------------
-        lachagardenContext db = new lachagardenContext();
+        private lachagardenContext db = new lachagardenContext();
+
         private static BuildingDao instance = null;
         private static readonly object instanceLock = new object();
-        private BuildingDao() { }
+
+        private BuildingDao()
+        {
+        }
+
         public static BuildingDao Instance
         {
             get
@@ -41,16 +41,14 @@ namespace BussinessLayer.Dao
                 buildings = context.Buildings.ToList();
                 for (int i = 1; i <= buildings.Count; i++)
                 {
-                     FList.Add(buildings[i - 1]);
+                    FList.Add(buildings[i - 1]);
                 }
-
             }
             catch (Exception e)
             {
                 throw new Exception(e.Message);
             }
             return FList;
-
         }
 
         //-----------------------

@@ -1,19 +1,19 @@
 ﻿using DataAccessLayer.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BussinessLayer.Dao
 {
     internal class AreaDao
     {
         //-----------------------
-        lachagardenContext db = new lachagardenContext();
+        private lachagardenContext db = new lachagardenContext();
+
         private static AreaDao instance = null;
         private static readonly object instanceLock = new object();
-        private AreaDao() { }
+
+        private AreaDao()
+        {
+        }
+
         public static AreaDao Instance
         {
             get
@@ -43,14 +43,12 @@ namespace BussinessLayer.Dao
                 {
                     FList.Add(area[i - 1]);
                 }
-
             }
             catch (Exception e)
             {
                 throw new Exception(e.Message);
             }
             return FList;
-
         }
 
         //-----------------------

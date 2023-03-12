@@ -1,20 +1,19 @@
-﻿using BussinessLayer.DTO;
-using DataAccessLayer.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using DataAccessLayer.Models;
 
 namespace BussinessLayer.Dao
 {
     public class GardenPackageDao
     {
         //-----------------------
-        lachagardenContext db = new lachagardenContext();
+        private lachagardenContext db = new lachagardenContext();
+
         private static GardenPackageDao instance = null;
         private static readonly object instanceLock = new object();
-        private GardenPackageDao() { }
+
+        private GardenPackageDao()
+        {
+        }
+
         public static GardenPackageDao Instance
         {
             get
@@ -44,14 +43,12 @@ namespace BussinessLayer.Dao
                 {
                     if (gardenpacks[i - 1].Status == 1) { FList.Add(gardenpacks[i - 1]); }
                 }
-
             }
             catch (Exception e)
             {
                 throw new Exception(e.Message);
             }
             return FList;
-
         }
 
         //-----------------------
@@ -158,4 +155,3 @@ namespace BussinessLayer.Dao
         }
     }
 }
-

@@ -1,12 +1,6 @@
-﻿using Abp.Domain.Uow;
-using BussinessLayer.IRepository;
-using DataAccessLayer.Models;
-using Google.Apis.Auth;
-using LachaGarden.Models;
+﻿using LachaGarden.Models;
 using LachaGarden.Services;
 using Microsoft.AspNetCore.Mvc;
-using Newtonsoft.Json.Linq;
-using System.Net.Http.Json;
 
 namespace LachaGarden.Controllers
 {
@@ -14,73 +8,52 @@ namespace LachaGarden.Controllers
     [Route("v1/[controller]")]
     public class AuthController : ControllerBase
     {
-
-        public class AuthService : IAuthService
+        //IAuthService _authService;
+        //private static string ApiKey = "AIzaSyBHD0FfT6VBL4kje_dqEX0f2Y3OBzMUybk";
+        //public AuthController(IAuthService authService)
+        //{
+        //    _authService = authService;
+        //}
+        //[HttpPost]
+        //public async Task<AuthDTO> Authentication(string email, string password)
+        //{
+        //    var AccessToken = _authService.Authenticate(email, password);
+        //    return await AccessToken;
+        //}
+        //[HttpPost]
+        //public async Task<AuthDTO> SingleSignOn(GoogleJsonWebSignature.Payload googlePayload)
+        //{
+        //    var AccessToken = _authService.Authenticate(googlePayload);
+        //    return await AccessToken;
+        //}
+        [HttpPost]
+        public async Task<ActionResult> GetToken([FromForm] LoginInfo loginInfo)
         {
-            private readonly IUserRepository _userRepository;
-            private readonly ICustomerRepository _customerRepository;
-            private readonly IUnitOfWork _unitOfWork;
-            private readonly IConfiguration _configuration;
-
-            public AuthService(IUserRepository userRepository, ICustomerRepository customerRepository, IUnitOfWork unitOfWork, IConfiguration configuration)
+            string uri = "https://www.googleapis.com/identitytoolkit/v3/relyingparty/verifyPassword?key=AIzaSyAp7q2T07VOPchctK0RVVFfdNU9KAjo1Uc";
+            using (HttpClient client = new HttpClient())
             {
-                _userRepository = userRepository;
-                _customerRepository = customerRepository;
-                _unitOfWork = unitOfWork;
-                _configuration = configuration;
-            }
-
-            public async Task<AuthDTO> Authenticate(string gmail, string password)
-            {
-                var user = await _userRepository.FindByGmail(gmail);
-
-                if (user == null)
+                FireBaseLoginInfo fireBaseLoginInfo = new FireBaseLoginInfo
                 {
-                    return null;
-                }
-
-                if (!AuthHelper.VerifyPassword(password, user.Password))
-                {
-                    return null;
-                }
-
-
-                var token = AuthHelper.BuildToken(
-                    _configuration["Jwt:Internal:Key"], _configuration["Jwt:Internal:ValidIssuer"], user.Id, user.Gmail, user.Role.RoleName);
-
-                return new AuthDTO
-                {
-                    AccessToken = token
+                    Email = loginInfo.Username,
+                    Password = loginInfo.Password
                 };
-
-            }
-
-            public async Task<AuthDTO> Authenticate(GoogleJsonWebSignature.Payload payload)
-            {
-                var customer = await _customerRepository.FindByGmail(payload.Email);
-
-                if (customer == null)
+                var result = await client.PostAsJsonAsync<FireBaseLoginInfo, GoogleToken>(uri, fireBaseLoginInfo);
+                if (result != null)
                 {
-                    var id = payload.Email.Split("@")[0];
-                    customer = new Customer
+                    Token token = new Token
                     {
-                        Id = id,
-                        Gmail = payload.Email,
-                        FullName = payload.GivenName,
-                        Status = 1
+                        token_type = "Bearer",
+                        access_token = result.idToken,
+                        id_token = result.idToken,
+                        expires_in = int.Parse(result.expiresIn),
+                        refresh_token = result.refreshToken
                     };
-                    await _customerRepository.Create(customer);
-                    await _unitOfWork.SaveChangesAsync();
+                    return Ok(token);
                 }
-
-                var token = AuthHelper.BuildToken(
-                    _configuration["Jwt:Internal:Key"], _configuration["Jwt:Internal:ValidIssuer"], customer.Id, customer.Gmail, "Customer");
-
-                return new AuthDTO
+                else
                 {
-                    AccessToken = token,
-                };
-
+                    return BadRequest();
+                }
             }
         }
     }

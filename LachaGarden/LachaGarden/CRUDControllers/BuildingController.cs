@@ -1,6 +1,5 @@
 ﻿using BussinessLayer.DTO;
 using BussinessLayer.IRepository;
-using BussinessLayer.Repository;
 using DataAccessLayer.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -10,7 +9,6 @@ namespace LachaGarden.CRUDControllers
     [ApiController]
     public class BuildingController : Controller
     {
-
         private readonly IBuildingRepository buildingRepository;
 
         public BuildingController(IBuildingRepository buildingRepository)

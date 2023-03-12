@@ -1,8 +1,6 @@
 ﻿using FirebaseAdmin;
 using FirebaseAdmin.Messaging;
 using Google.Apis.Auth.OAuth2;
-using Microsoft.AspNetCore.Builder.Extensions;
-using LachaGarden.Models;
 
 namespace LachaGarden.Services
 {
@@ -15,7 +13,6 @@ namespace LachaGarden.Services
                 Credential = GoogleCredential.FromFile(@"Auth.json")
             });
 
-
             // See documentation on defining a message payload.
             var message = new Message()
             {
@@ -24,10 +21,9 @@ namespace LachaGarden.Services
                     { "score", "850" },
                     { "time", "1:00" },
                 },
-                
+
                 Notification = new FirebaseAdmin.Messaging.Notification()
                 {
-
                     Title = noti.Title,
                     Body = noti.Body,
                 },
@@ -40,6 +36,7 @@ namespace LachaGarden.Services
             // Response is a message ID string.
             Console.WriteLine("Successfully sent message: " + response);
         }
+
         public async void SendSigleMessage(Models.Notification noti, List<string> registrationTokens)
         {
             var message = new MulticastMessage()
@@ -52,7 +49,6 @@ namespace LachaGarden.Services
 
                 Notification = new FirebaseAdmin.Messaging.Notification()
                 {
-
                     Title = noti.Title,
                     Body = noti.Body,
                 },

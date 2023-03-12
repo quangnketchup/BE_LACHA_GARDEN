@@ -1,18 +1,9 @@
-﻿using BussinessLayer.IRepository;
+﻿using AspNetCore.Firebase.Authentication.Extensions;
+using BussinessLayer.IRepository;
 using BussinessLayer.Repository;
-using FirebaseAdmin;
-using Google.Apis.Auth.OAuth2;
-using LachaGarden.Services;
-using Microsoft.AspNetCore.Authentication.JwtBearer;
-using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Any;
-using Microsoft.OpenApi.Interfaces;
+using DataAccessLayer.Models;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
-using Newtonsoft.Json;
-using Swashbuckle.AspNetCore.Filters;
-using System.Text;
 
 namespace LachaGarden
 {
@@ -28,17 +19,24 @@ namespace LachaGarden
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddDbContext<lachagardenContext>(options =>
+                    options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             // Add services to the container.
-            
+
             // khai bao controller
             services.AddScoped<IGardenPackageRepository, GardenPackageRepository>();
             services.AddScoped<IPackageTypeRepository, PackageTypeRepository>();
-            services.AddScoped<ITreeRepository, TreeRepository> ();
-            services.AddScoped<ITreeTypeRepository, TreeTypeRepository> ();
-            services.AddScoped<IRoomRepository, RoomRepository> ();
-            services.AddScoped<IBuildingRepository, BuildingRepository> ();
-            services.AddScoped<IAreaRepository, AreaRepository> ();
-            services.AddScoped<IGardenRepository, GardenRepository> ();
+            services.AddScoped<ITreeRepository, TreeRepository>();
+            services.AddScoped<ITreeTypeRepository, TreeTypeRepository>();
+            services.AddScoped<IRoomRepository, RoomRepository>();
+            services.AddScoped<IBuildingRepository, BuildingRepository>();
+            services.AddScoped<IAreaRepository, AreaRepository>();
+            services.AddScoped<IGardenRepository, GardenRepository>();
+            services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<ICustomerRepository, CustomerRepository>();
+            services.AddMvcCore().AddApiExplorer();
+            // Add authorization
+
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowAll", builder =>
@@ -48,63 +46,52 @@ namespace LachaGarden
                            .AllowAnyMethod();
                 });
             });
-            // Add Swagger support
+
+            services.AddFirebaseAuthentication("https://securetoken.google.com/lachagarden", "lachagarden");
+            services.AddAuthorization();
+
             services.AddSwaggerGen(c =>
             {
-                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My API", Version = "v1" });
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My Api", Version = "v1" });
+
                 c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
                 {
-                    In = ParameterLocation.Header,
-                    Description = "Please enter 'Bearer' followed by a space and the JWT value",
                     Name = "Authorization",
-                    Type = SecuritySchemeType.ApiKey
+                    In = ParameterLocation.Header,
+                    Type = SecuritySchemeType.ApiKey,
+                    Scheme = "Bearer"
                 });
+
                 c.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
-        {
-            new OpenApiSecurityScheme
-            {
-                Reference = new OpenApiReference
                 {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                },
-                Scheme = "oauth2",
-                Name = "Bearer",
-                In = ParameterLocation.Header,
-            },
-            new List<string>()
-        }
-    });
+                    {
+                        new OpenApiSecurityScheme
+                        {
+                            Reference = new OpenApiReference
+                            {
+                                Type = ReferenceType.SecurityScheme,
+                                Id = "Bearer"
+                            },
+                            Scheme = "oauth2",
+                            Name = "Bearer",
+                            In = ParameterLocation.Header,
+                        },
+                        new List<string>()
+                    }
+                });
             });
-            // Add controllers
-            services.AddControllers();
-            // firebase auth
-            services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
-            .AddJwtBearer(opt =>
-            {
-                opt.Authority = Configuration["Jwt:Firebase:ValidIssuer"];
-                opt.TokenValidationParameters = new TokenValidationParameters
-                {
-                    ValidateIssuer = true,
-                    ValidateAudience = true,
-                    ValidateLifetime = true,
-                    ValidateIssuerSigningKey = true,
-                    ValidIssuer = Configuration["Jwt:Firebase:ValidIssuer"],
-                    ValidAudience = Configuration["Jwt:Firebase:ValidAudience"]
-                };
-            });
-            services.AddAuthorization(); // Add this line to fix the error
         }
+
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
+            var builder = new ConfigurationBuilder();
             if (env.IsDevelopment())
             {
-                app.UseDeveloperExceptionPage();
+                builder.AddJsonFile("appsettings.Development.json", optional: false, reloadOnChange: true);
             }
             else
             {
-                app.UseExceptionHandler("/error");
+                builder.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
             }
 
             app.UseHttpsRedirection();
@@ -121,6 +108,7 @@ namespace LachaGarden
             {
                 c.SwaggerEndpoint($"/swagger/v1/swagger.json", "My Api v1");
             });
+
             app.UseCors("AllowAll");
             app.UseEndpoints(endpoints =>
             {

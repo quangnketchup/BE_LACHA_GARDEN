@@ -1,11 +1,4 @@
-﻿using DataAccessLayer.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace BussinessLayer.Dao
+﻿namespace BussinessLayer.Dao
 {
     public class TechnicalDao
     {
@@ -44,14 +37,12 @@ namespace BussinessLayer.Dao
                 {
                     if (gardenpacks[i - 1].Status == 1) { FList.Add(gardenpacks[i - 1]); }
                 }
-
             }
             catch (Exception e)
             {
                 throw new Exception(e.Message);
             }
             return FList;
-
         }
 
         //-----------------------

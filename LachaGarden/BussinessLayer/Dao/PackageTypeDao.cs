@@ -1,19 +1,19 @@
 ﻿using DataAccessLayer.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BussinessLayer.Dao
 {
     public class PackageTypeDao
     {
         //-----------------------
-        lachagardenContext db = new lachagardenContext();
+        private lachagardenContext db = new lachagardenContext();
+
         private static PackageTypeDao instance = null;
         private static readonly object instanceLock = new object();
-        private PackageTypeDao() { }
+
+        private PackageTypeDao()
+        {
+        }
+
         public static PackageTypeDao Instance
         {
             get
@@ -43,14 +43,12 @@ namespace BussinessLayer.Dao
                 {
                     if (packTypes[i - 1].Status == 1) { FList.Add(packTypes[i - 1]); }
                 }
-
             }
             catch (Exception e)
             {
                 throw new Exception(e.Message);
             }
             return FList;
-
         }
 
         //-----------------------

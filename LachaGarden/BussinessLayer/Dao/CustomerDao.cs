@@ -1,19 +1,19 @@
 ﻿using DataAccessLayer.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BussinessLayer.Dao
 {
     public class CustomerDao
     {
         //-----------------------
-        lachagardenContext db = new lachagardenContext();
+        private lachagardenContext db = new lachagardenContext();
+
         private static CustomerDao instance = null;
         private static readonly object instanceLock = new object();
-        private CustomerDao() { }
+
+        private CustomerDao()
+        {
+        }
+
         public static CustomerDao Instance
         {
             get
@@ -43,14 +43,12 @@ namespace BussinessLayer.Dao
                 {
                     if (customers[i - 1].Status == 1) { FList.Add(customers[i - 1]); }
                 }
-
             }
             catch (Exception e)
             {
                 throw new Exception(e.Message);
             }
             return FList;
-
         }
 
         //-----------------------

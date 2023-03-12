@@ -1,19 +1,19 @@
 ﻿using DataAccessLayer.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BussinessLayer.Dao
 {
     public class GardenDao
     {
         //-----------------------
-        lachagardenContext db = new lachagardenContext();
+        private lachagardenContext db = new lachagardenContext();
+
         private static GardenDao instance = null;
         private static readonly object instanceLock = new object();
-        private GardenDao() { }
+
+        private GardenDao()
+        {
+        }
+
         public static GardenDao Instance
         {
             get
@@ -43,14 +43,12 @@ namespace BussinessLayer.Dao
                 {
                     if (gardens[i - 1].Status == 1 || gardens[i - 1].Status == 3 || gardens[i - 1].Status == 2) { FList.Add(gardens[i - 1]); }
                 }
-
             }
             catch (Exception e)
             {
                 throw new Exception(e.Message);
             }
             return FList;
-
         }
 
         //-----------------------

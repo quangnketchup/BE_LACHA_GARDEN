@@ -1,16 +1,13 @@
 ﻿using DataAccessLayer.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BussinessLayer.IRepository
 {
     public interface IBuildingRepository
     {
         IEnumerable<Building> GetBuildings();
+
         Building GetBuildingByID(int buildingID);
+
         IEnumerable<Building> GetFiltered(string tag);
     }
 }

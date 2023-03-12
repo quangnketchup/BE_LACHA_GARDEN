@@ -1,11 +1,13 @@
 ﻿using BussinessLayer.DTO;
 using BussinessLayer.IRepository;
 using DataAccessLayer.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LachaGarden.CRUDControllers
 {
     [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
     public class AreaController : Controller
     {
@@ -17,6 +19,7 @@ namespace LachaGarden.CRUDControllers
         }
 
         // GET: api/Area
+
         [HttpGet]
         public ActionResult<IEnumerable<AreaDTO>> Get()
         {

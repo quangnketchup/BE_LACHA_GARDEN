@@ -1,10 +1,7 @@
 ﻿using BussinessLayer.DTO;
 using BussinessLayer.IRepository;
-using BussinessLayer.Repository;
 using DataAccessLayer.Models;
-using LachaGarden.Services;
 using Microsoft.AspNetCore.Mvc;
-using System.Text;
 
 namespace LachaGarden.CRUDControllers
 {
@@ -28,7 +25,7 @@ namespace LachaGarden.CRUDControllers
         }
 
         // GET: api/Garden/5
-        [HttpGet("{id}")]
+        [HttpGet("{id}"), AutoValidateAntiforgeryToken]
         public ActionResult<GardenDTO> Get(int id)
         {
             var garden = gardenRepository.GetGardenByID(id);
@@ -58,12 +55,10 @@ namespace LachaGarden.CRUDControllers
             return BadRequest(ModelState);
         }
 
-
         // POST: api/Garden/edit/5
         [HttpPut("edit/{id}")]
         public ActionResult Put(int id, [FromBody] GardenDTO garden)
         {
-
             if (id != garden.Id)
             {
                 return BadRequest();

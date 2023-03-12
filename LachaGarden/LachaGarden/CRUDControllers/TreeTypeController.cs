@@ -1,6 +1,5 @@
 ﻿using BussinessLayer.DTO;
 using BussinessLayer.IRepository;
-using BussinessLayer.Repository;
 using DataAccessLayer.Models;
 using Microsoft.AspNetCore.Mvc;
 
@@ -55,12 +54,10 @@ namespace LachaGarden.CRUDControllers
             return BadRequest(ModelState);
         }
 
-
         // POST: api/TreeType/edit/5
         [HttpPut("edit/{id}")]
         public ActionResult Put(int id, [FromBody] TreeTypeDTO treeType)
         {
-
             if (id != treeType.Id)
             {
                 return BadRequest();

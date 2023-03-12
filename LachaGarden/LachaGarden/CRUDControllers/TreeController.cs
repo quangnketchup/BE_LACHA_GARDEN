@@ -59,12 +59,10 @@ namespace LachaGarden.CRUDControllers
             return BadRequest(ModelState);
         }
 
-
         // POST: api/Tree/edit/5
         [HttpPut("edit/{id}")]
         public ActionResult Put(int id, [FromBody] TreeDTO tree)
         {
-
             if (id != tree.Id)
             {
                 return BadRequest();

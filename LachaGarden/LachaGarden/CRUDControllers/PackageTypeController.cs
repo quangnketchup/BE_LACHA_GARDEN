@@ -54,12 +54,10 @@ namespace LachaGarden.CRUDControllers
             return BadRequest(ModelState);
         }
 
-
         // POST: api/PackageType/edit/5
         [HttpPut("edit/{id}")]
         public ActionResult Put(int id, [FromBody] PackageTypeDTO packageType)
         {
-
             if (id != packageType.Id)
             {
                 return BadRequest();

@@ -1,5 +1,5 @@
-﻿using Newtonsoft.Json.Serialization;
-using Newtonsoft.Json;
+﻿using Newtonsoft.Json;
+using Newtonsoft.Json.Serialization;
 using System.Net.Http.Headers;
 
 namespace LachaGarden.Services
@@ -18,9 +18,8 @@ namespace LachaGarden.Services
             {
                 return default(R);
             }
-
-
         }
+
         public static Task<HttpResponseMessage> PostAsJsonAsync<T>(
             this HttpClient httpClient, string url, T data)
         {

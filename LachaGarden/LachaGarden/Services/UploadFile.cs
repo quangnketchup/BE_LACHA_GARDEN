@@ -1,11 +1,6 @@
 ﻿using Firebase.Auth;
 using Firebase.Storage;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.IO;
-using System.Threading;
-using System.Threading.Tasks;
 
 namespace LachaGarden.Services
 {

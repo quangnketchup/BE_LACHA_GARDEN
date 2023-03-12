@@ -1,14 +1,6 @@
-﻿using BussinessLayer.IRepository;
-using BussinessLayer.Repository;
-using DataAccessLayer.Models;
+﻿using DataAccessLayer.Models;
 using Microsoft.AspNetCore.Mvc;
-using System.Diagnostics.Metrics;
-using Microsoft.AspNetCore.Http;
-using System.Web;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+
 namespace LachaGarden.Controllers
 {
     public class LoginController : Controller
@@ -50,7 +42,6 @@ namespace LachaGarden.Controllers
                         HttpContext.Session.SetString("isAdmin", "false");
                         HttpContext.Session.SetString("id", i.Id);
                         return RedirectToAction("Index", "Customer");
-
                     }
                 }
                 if (isCustomer == true)
@@ -62,12 +53,10 @@ namespace LachaGarden.Controllers
                 {
                     ViewBag.error = "Wrong username/email or pass word, please try again";
                     return RedirectToAction("Login", "Login");
-
                 }
             }
             else
             {
-
                 ViewBag.error = "Please Enter your username and password";
                 return RedirectToAction("Login", "Login");
             }

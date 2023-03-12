@@ -8,8 +8,6 @@ namespace LachaGarden.Services
     {
         public void Apply(OpenApiOperation operation, OperationFilterContext context)
         {
-
-
             var requiredScopes = context.MethodInfo.DeclaringType.GetCustomAttributes(true)
                      .OfType<AuthorizeAttribute>()
                      .Select(attr => attr.Policy)
@@ -17,7 +15,6 @@ namespace LachaGarden.Services
 
             if (requiredScopes.Any())
             {
-
                 var oAuthScheme = new OpenApiSecurityScheme
                 {
                     Reference = new OpenApiReference { Type = ReferenceType.SecurityScheme, Id = "oauth2" }
@@ -30,7 +27,6 @@ namespace LachaGarden.Services
                      [ oAuthScheme ] = requiredScopes.ToList()
                  }
              };
-
             }
         }
     }

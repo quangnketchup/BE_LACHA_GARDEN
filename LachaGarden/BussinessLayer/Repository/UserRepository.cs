@@ -1,11 +1,6 @@
 ﻿using BussinessLayer.IRepository;
 using DataAccessLayer.Models;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace BussinessLayer.Repository
 {
@@ -27,7 +22,6 @@ namespace BussinessLayer.Repository
         public async Task<User> FindByGmail(string Gmail)
         {
             return await _context.Users
-                .Include(q => q.Role)
                 .SingleOrDefaultAsync(x => x.Gmail == Gmail);
         }
 

@@ -1,6 +1,5 @@
 ﻿using Firebase.Auth;
 using Firebase.Storage;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace LachaGarden.Controllers
@@ -13,7 +12,7 @@ namespace LachaGarden.Controllers
         private static string Bucket = "lachagarden.appspot.com";
         private static string AuthEmail = "quangnketchup@gmail.com";
         private static string AuthPassword = "quangnketchup";
-        
+
         [HttpPost(Name = "upload")]
         public async Task<ActionResult> UploadImageFirebase(IFormFile image)
         {
