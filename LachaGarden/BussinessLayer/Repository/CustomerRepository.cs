@@ -1,4 +1,5 @@
-﻿using BussinessLayer.IRepository;
+﻿using BussinessLayer.Dao;
+using BussinessLayer.IRepository;
 using DataAccessLayer.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -6,34 +7,19 @@ namespace BussinessLayer.Repository
 {
     public class CustomerRepository : ICustomerRepository
     {
-        private readonly lachagardenContext _context;
+        public void InsertCustomer(Customer customer) => CustomerDao.Instance.addNewCustomer(customer);
 
-        public CustomerRepository(lachagardenContext context)
-        {
-            _context = context;
-        }
+        public void RemoveCustomer(string customerId) => CustomerDao.Instance.Remove(customerId);
 
-        public async Task<Customer> Create(Customer customer)
-        {
-            await _context.AddAsync(customer);
-            return customer;
-        }
+        public void UpdateCustomer(Customer customer) => CustomerDao.Instance.Update(customer);
 
-        public async Task<Customer> FindByGmail(string Gmail)
-        {
-            return await _context.Customers
-                .SingleOrDefaultAsync(x => x.Gmail == Gmail);
-        }
+        public IEnumerable<Customer> GetFiltered(string tag) => CustomerDao.Instance.GetFilteredCustomer(tag);
 
-        public async Task<Customer> Get(string id)
-        {
-            return await _context.Customers
-                .SingleOrDefaultAsync(q => q.Id == id);
-        }
+        public Customer GetCustomerByID(string CustomerID) => CustomerDao.Instance.GetCustomerByID(CustomerID);
 
-        public async Task Update(Customer customer)
-        {
-            _context.Customers.Update(customer);
-        }
+        public IEnumerable<Customer> GetCustomers() => CustomerDao.Instance.getCustomerList();
+
+        public async Task<Customer> GetCustomerByEmail(string email)
+        => CustomerDao.Instance.GetCustomer(email);
     }
 }

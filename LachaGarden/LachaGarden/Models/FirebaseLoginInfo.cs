@@ -1,4 +1,6 @@
-﻿namespace LachaGarden.Models
+﻿using DataAccessLayer.Models;
+
+namespace LachaGarden.Models
 {
     public class FireBaseLoginInfo
     {

@@ -4,12 +4,18 @@ namespace BussinessLayer.IRepository
 {
     public interface ICustomerRepository
     {
-        Task<Customer> Get(string id);
+        Task<Customer> GetCustomerByEmail(string email);
 
-        Task<Customer> FindByGmail(string Gmail);
+        IEnumerable<Customer> GetCustomers();
 
-        Task<Customer> Create(Customer customer);
+        Customer GetCustomerByID(string CustomerID);
 
-        Task Update(Customer customer);
+        IEnumerable<Customer> GetFiltered(string tag);
+
+        void InsertCustomer(Customer customer);
+
+        void UpdateCustomer(Customer customer);
+
+        void RemoveCustomer(string customerId);
     }
 }

@@ -33,15 +33,18 @@ namespace BussinessLayer.Dao
 
         public IEnumerable<Customer> getCustomerList()
         {
-            var customers = new List<Customer>();
             List<Customer> FList = new List<Customer>();
             try
             {
                 using var context = new lachagardenContext();
-                customers = context.Customers.ToList();
-                for (int i = 1; i <= customers.Count; i++)
+                var customers = context.Customers.Where(c => c.Status == 1).ToList();
+                if (customers.Any())
                 {
-                    if (customers[i - 1].Status == 1) { FList.Add(customers[i - 1]); }
+                    FList.AddRange(customers);
+                }
+                else
+                {
+                    FList = null;
                 }
             }
             catch (Exception e)
@@ -152,6 +155,21 @@ namespace BussinessLayer.Dao
                     filtered.Add(customer);
             }
             return filtered;
+        }
+
+        public Customer GetCustomer(string email)
+        {
+            Customer customer = null;
+            try
+            {
+                using var context = new lachagardenContext();
+                customer = context.Customers.SingleOrDefault(a => a.Gmail.Equals(email));
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return customer;
         }
     }
 }

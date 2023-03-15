@@ -44,8 +44,9 @@ namespace LachaGarden.CRUDControllers
             {
                 Garden newGarden = new Garden
                 {
-                    Status = garden.Status,
+                    Status = 1,
                     DateTime = garden.DateTime,
+                    GardenPackageId = garden.GardenPackageId,
                     RoomId = garden.RoomId,
                 };
 
@@ -71,6 +72,7 @@ namespace LachaGarden.CRUDControllers
                     DateTime = garden.DateTime,
                     GardenPackageId = garden.GardenPackageId,
                     Status = garden.Status,
+                    RoomId = garden.RoomId,
                 };
                 gardenRepository.UpdateGarden(UpdateGarden);
                 return Ok("Update Successfull");
