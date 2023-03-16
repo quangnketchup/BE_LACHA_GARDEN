@@ -18,7 +18,7 @@ namespace LachaGarden.CRUDControllers
 
         // GET: api/Tree
         [HttpGet]
-        public ActionResult<IEnumerable<GardenPackageDTO>> Get()
+        public ActionResult<IEnumerable<TreeDTO>> Get()
         {
             var treeList = treeRepository.GetTrees();
             return Ok(treeList);
@@ -73,6 +73,7 @@ namespace LachaGarden.CRUDControllers
                 {
                     Id = tree.Id,
                     Image = tree.Image,
+                    NameTree = tree.NameTree,
                     Price = tree.Price,
                     Description = tree.Description,
                     Status = tree.Status,

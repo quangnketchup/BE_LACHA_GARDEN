@@ -8,7 +8,7 @@ namespace BussinessLayer.IRepository
 
         Garden GetGardenByID(int GardenID);
 
-        IEnumerable<Garden> GetFiltered(string tag);
+        IEnumerable<Garden> GetFilteredGarden(string tag);
 
         void InsertGarden(Garden garden);
 

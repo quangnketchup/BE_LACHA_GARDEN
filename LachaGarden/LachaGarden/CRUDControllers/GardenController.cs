@@ -1,7 +1,10 @@
 ﻿using BussinessLayer.DTO;
 using BussinessLayer.IRepository;
+using BussinessLayer.ViewModels;
+using Castle.MicroKernel;
 using DataAccessLayer.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections;
 
 namespace LachaGarden.CRUDControllers
 {
@@ -10,18 +13,39 @@ namespace LachaGarden.CRUDControllers
     public class GardenController : Controller
     {
         private readonly IGardenRepository gardenRepository;
+        private readonly IGardenPackageRepository gardenPackageRepository;
+        private readonly GardenViewModel gardenAndGardenPackageRepository;
 
-        public GardenController(IGardenRepository gardenRepository)
+        public GardenController(IGardenRepository gardenRepository, IGardenPackageRepository gardenPackageRepository, GardenViewModel gardenAndGardenPackageRepository)
         {
             this.gardenRepository = gardenRepository;
+            this.gardenPackageRepository = gardenPackageRepository;
+            this.gardenAndGardenPackageRepository = gardenAndGardenPackageRepository;
         }
 
         // GET: api/Garden
         [HttpGet]
         public ActionResult<IEnumerable<GardenDTO>> Get()
         {
-            var gardenList = gardenRepository.GetGardens();
-            return Ok(gardenList);
+            ArrayList order = new ArrayList();
+            IEnumerable<Garden> garden = gardenAndGardenPackageRepository.GardenRepository.GetGardens();
+            GardenPackage gardenPack;
+            Room room;
+            foreach (Garden gardenList in garden)
+            {
+                int gardenPackID = (int)gardenList.GardenPackageId;
+                int roomID = (int)gardenList.RoomId;
+                gardenPack = gardenAndGardenPackageRepository.GardenPackageRepository.GetGardenPackageByID(gardenPackID);
+                if (gardenPack != null)
+                {
+                    gardenPack = gardenAndGardenPackageRepository.GardenPackageRepository.GetGardenPackageByID(gardenPackID);
+                    room = gardenAndGardenPackageRepository.RoomRepository.GetRoomByID(roomID);
+                    gardenList.GardenPackage = gardenPack;
+                    gardenList.Room = room;
+                    order.Add(gardenList);
+                }
+            }
+            return Ok(order);
         }
 
         // GET: api/Garden/5
@@ -85,6 +109,7 @@ namespace LachaGarden.CRUDControllers
         public ActionResult Delete(int id)
         {
             var garden = gardenRepository.GetGardenByID(id);
+            //var garden = gardenRepository.GetGar
             if (garden == null)
             {
                 return NotFound();
