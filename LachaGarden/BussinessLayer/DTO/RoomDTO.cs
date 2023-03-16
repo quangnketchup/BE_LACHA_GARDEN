@@ -1,4 +1,6 @@
-﻿namespace BussinessLayer.DTO
+﻿using DataAccessLayer.Models;
+
+namespace BussinessLayer.DTO
 {
     public class RoomDTO
     {
@@ -8,5 +10,8 @@
         public int? Status { get; set; }
         public int? BuildingId { get; set; }
         public int? CustomerId { get; set; }
+        public virtual Building Building { get; set; }
+        public virtual Customer Customer { get; set; }
+        public virtual Garden Garden { get; set; }
     }
 }

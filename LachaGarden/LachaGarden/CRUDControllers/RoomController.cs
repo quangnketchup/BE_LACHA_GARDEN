@@ -1,7 +1,9 @@
 ﻿using BussinessLayer.DTO;
 using BussinessLayer.IRepository;
+using BussinessLayer.ViewModels;
 using DataAccessLayer.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections;
 
 namespace LachaGarden.CRUDControllers
 {
@@ -10,18 +12,36 @@ namespace LachaGarden.CRUDControllers
     public class RoomController : Controller
     {
         private readonly IRoomRepository roomRepository;
+        private readonly RoomViewModel roomViewModel;
 
-        public RoomController(IRoomRepository roomRepository)
+        public RoomController(IRoomRepository roomRepository, RoomViewModel roomViewModel)
         {
             this.roomRepository = roomRepository;
+            this.roomViewModel = roomViewModel;
         }
 
         // GET: api/Room
         [HttpGet]
         public ActionResult<IEnumerable<RoomDTO>> Get()
         {
-            var roomList = roomRepository.GetRooms();
-            return Ok(roomList);
+            ArrayList RoomList = new ArrayList();
+            IEnumerable<Room> room = roomViewModel.RoomRepository.GetRooms();
+            Customer customer;
+            Building building;
+            foreach (Room rooms in room)
+            {
+                string customerID = (string)rooms.CustomerId;
+                int buildingID = (int)rooms.BuildingId;
+                customer = roomViewModel.customerRepository.GetCustomerByID(customerID);
+                building = roomViewModel.BuildingRepository.GetBuildingByID(buildingID);
+                if (customer != null || building != null)
+                {
+                    rooms.Customer = customer;
+                    rooms.Building = building;
+                    RoomList.Add(rooms);
+                }
+            }
+            return Ok(RoomList);
         }
 
         // GET: api/Room/5

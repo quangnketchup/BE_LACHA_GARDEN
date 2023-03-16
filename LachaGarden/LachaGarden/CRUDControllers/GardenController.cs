@@ -36,10 +36,9 @@ namespace LachaGarden.CRUDControllers
                 int gardenPackID = (int)gardenList.GardenPackageId;
                 int roomID = (int)gardenList.RoomId;
                 gardenPack = gardenAndGardenPackageRepository.GardenPackageRepository.GetGardenPackageByID(gardenPackID);
-                if (gardenPack != null)
+                room = gardenAndGardenPackageRepository.RoomRepository.GetRoomByID(roomID);
+                if (gardenPack != null || room != null)
                 {
-                    gardenPack = gardenAndGardenPackageRepository.GardenPackageRepository.GetGardenPackageByID(gardenPackID);
-                    room = gardenAndGardenPackageRepository.RoomRepository.GetRoomByID(roomID);
                     gardenList.GardenPackage = gardenPack;
                     gardenList.Room = room;
                     order.Add(gardenList);
