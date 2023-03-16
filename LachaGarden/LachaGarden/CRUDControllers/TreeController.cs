@@ -1,7 +1,9 @@
 ﻿using BussinessLayer.DTO;
 using BussinessLayer.IRepository;
+using BussinessLayer.ViewModels;
 using DataAccessLayer.Models;
 using Microsoft.AspNetCore.Mvc;
+using System.Collections;
 
 namespace LachaGarden.CRUDControllers
 {
@@ -10,18 +12,32 @@ namespace LachaGarden.CRUDControllers
     public class TreeController : Controller
     {
         private readonly ITreeRepository treeRepository;
+        private readonly TreeViewModel treeViewModel;
 
-        public TreeController(ITreeRepository treeRepository)
+        public TreeController(ITreeRepository treeRepository, TreeViewModel treeViewModel)
         {
             this.treeRepository = treeRepository;
+            this.treeViewModel = treeViewModel;
         }
 
         // GET: api/Tree
         [HttpGet]
         public ActionResult<IEnumerable<TreeDTO>> Get()
         {
-            var treeList = treeRepository.GetTrees();
-            return Ok(treeList);
+            ArrayList TreeList = new ArrayList();
+            IEnumerable<Tree> tree = treeViewModel.treeRepository.GetTrees();
+            TreeType treeType;
+            foreach (Tree trees in tree)
+            {
+                int treeID = (int)trees.TreeTypeId;
+                treeType = treeViewModel.treeTypeRepository.GetTreeTypeByID(treeID);
+                if (treeType != null)
+                {
+                    trees.TreeType = treeType;
+                    TreeList.Add(trees);
+                }
+            }
+            return Ok(TreeList);
         }
 
         // GET: api/Tree/5

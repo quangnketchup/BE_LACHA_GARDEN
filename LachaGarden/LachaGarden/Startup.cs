@@ -36,6 +36,7 @@ namespace LachaGarden
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<BussinessLayer.ViewModels.GardenViewModel>();
             services.AddScoped<BussinessLayer.ViewModels.RoomViewModel>();
+            services.AddScoped<BussinessLayer.ViewModels.TreeViewModel>();
 
             services.AddMvcCore().AddApiExplorer();
             // Add authorization
