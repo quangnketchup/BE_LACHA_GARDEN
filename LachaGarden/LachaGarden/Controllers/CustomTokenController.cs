@@ -15,12 +15,16 @@ namespace LachaGarden.Controllers
     public class CustomTokenController : ControllerBase
     {
         private readonly ICustomerRepository _customerRepository;
+        private readonly IRoleRepository roleRepository;
+        private readonly IUserRepository userRepository;
         private readonly IConfiguration _configuration;
 
-        public CustomTokenController(ICustomerRepository customerRepository, IConfiguration configuration)
+        public CustomTokenController(ICustomerRepository customerRepository, IConfiguration configuration, IUserRepository userRepository, IRoleRepository roleRepository)
         {
             _customerRepository = customerRepository;
             _configuration = configuration;
+            this.userRepository = userRepository;
+            this.roleRepository = roleRepository;
         }
 
         [HttpPost]
@@ -76,6 +80,50 @@ namespace LachaGarden.Controllers
                 }
             }
             return TokenInfo;
+        }
+
+        [HttpPost("TokenAdmin")]
+        public async Task<Dictionary<string, string>> GetTokenInfoWithUser(string token)
+        {
+            var TokenInfo = new Dictionary<string, string>();
+            var handler = new JwtSecurityTokenHandler();
+            var jwtSecurityToken = handler.ReadJwtToken(token);
+            var claims = jwtSecurityToken.Claims.ToList();
+
+            foreach (var claim in claims)
+            {
+                TokenInfo.Add(claim.Type, claim.Value);
+            }
+
+            var modifiedTokenInfo = new Dictionary<string, string>(TokenInfo); // create a new dictionary
+
+            var uid = "";
+            foreach (var key in TokenInfo.Keys)
+            {
+                var value = TokenInfo[key];
+
+                if (key.Equals("user_id"))
+                {
+                    uid = value;
+                }
+                if (key.Equals("email"))
+                {
+                    User user = await userRepository.GetUserByEmail(value);
+                    int roleID = user.RoleId ?? 0;
+                    Role role = roleRepository.GetRoleByID((int)roleID);
+                    if (user == null)
+                    {
+                        modifiedTokenInfo.Add("user", "User don't allowed access web page");
+                        break;
+                    }
+                    else
+                    {
+                        modifiedTokenInfo.Add("roleName", role.RoleName);
+                    }
+                }
+            }
+
+            return modifiedTokenInfo; // return the new dictionary
         }
     }
 }

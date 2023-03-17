@@ -1,4 +1,5 @@
-﻿using BussinessLayer.IRepository;
+﻿using BussinessLayer.Dao;
+using BussinessLayer.IRepository;
 using DataAccessLayer.Models;
 using Microsoft.EntityFrameworkCore;
 
@@ -6,34 +7,19 @@ namespace BussinessLayer.Repository
 {
     public class UserRepository : IUserRepository
     {
-        private readonly lachagardenContext _context;
+        public void InsertUser(User user) => UserDao.Instance.addNewUser(user);
 
-        public UserRepository(lachagardenContext context)
-        {
-            _context = context;
-        }
+        public void RemoveUser(string userId) => UserDao.Instance.Remove(userId);
 
-        public async Task<User> Create(User user)
-        {
-            await _context.AddAsync(user);
-            return user;
-        }
+        public void UpdateUser(User user) => UserDao.Instance.Update(user);
 
-        public async Task<User> FindByGmail(string Gmail)
-        {
-            return await _context.Users
-                .SingleOrDefaultAsync(x => x.Gmail == Gmail);
-        }
+        public IEnumerable<User> GetFiltered(string tag) => UserDao.Instance.GetFilteredUser(tag);
 
-        public async Task<User> Get(string id)
-        {
-            return await _context.Users
-                .Include(q => q.Role).SingleOrDefaultAsync(q => q.Id == id);
-        }
+        public User GetUserByID(string UserID) => UserDao.Instance.GetUserByID(UserID);
 
-        public async Task Update(User user)
-        {
-            _context.Users.Update(user);
-        }
+        public IEnumerable<User> GetUsers() => UserDao.Instance.getUserList();
+
+        public async Task<User> GetUserByEmail(string email)
+        => UserDao.Instance.GetUser(email);
     }
 }

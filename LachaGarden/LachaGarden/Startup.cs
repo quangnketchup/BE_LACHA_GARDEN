@@ -34,6 +34,7 @@ namespace LachaGarden
             services.AddScoped<IGardenRepository, GardenRepository>();
             services.AddScoped<ICustomerRepository, CustomerRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IRoleRepository, RoleRepository>();
             services.AddScoped<BussinessLayer.ViewModels.GardenViewModel>();
             services.AddScoped<BussinessLayer.ViewModels.RoomViewModel>();
             services.AddScoped<BussinessLayer.ViewModels.TreeViewModel>();
@@ -47,10 +48,10 @@ namespace LachaGarden
                 {
                     builder.AllowAnyOrigin()
                            .AllowAnyHeader()
-                           .AllowAnyMethod();
+                           .AllowAnyMethod()
+                    .WithOrigins("http://localhost:3000");
                 });
             });
-
             services.AddFirebaseAuthentication("https://securetoken.google.com/lachagarden", "lachagarden");
             services.AddAuthorization();
 

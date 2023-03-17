@@ -1,6 +1,7 @@
 ﻿using BussinessLayer.DTO;
 using BussinessLayer.IRepository;
 using BussinessLayer.ViewModels;
+using Castle.Core.Resource;
 using DataAccessLayer.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Collections;
@@ -70,6 +71,25 @@ namespace LachaGarden.CRUDControllers
             }
 
             return Ok(result);
+        }
+
+        [HttpGet("search/{UserID}")]
+        public ActionResult<IEnumerable<Room>> SearchRoomByUserID(string UserID)
+        {
+            ArrayList ListUser = new ArrayList();
+            IEnumerable<Room> rooms = roomViewModel.RoomRepository.GetRooms();
+            Customer customer;
+            foreach (Room room in rooms)
+            {
+                string customerID = (string)room.CustomerId;
+                customer = roomViewModel.customerRepository.GetCustomerByID(UserID);
+                if (customer.Id == room.CustomerId)
+                {
+                    ListUser.Add(room);
+                }
+            }
+
+            return Ok(ListUser);
         }
     }
 }

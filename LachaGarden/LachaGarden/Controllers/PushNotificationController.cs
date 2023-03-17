@@ -14,5 +14,17 @@ namespace LachaGarden.Controllers
             PushNotification pushNotification = new PushNotification();
             pushNotification.SendSigleMessage(fcmNotiMessage, token);
         }
+
+        [HttpPost("multi")]
+        public async void senMultiMessing([FromBody] MultiNotificationRequest request)
+        {
+            PushNotification pushNotification = new PushNotification();
+            pushNotification.SendSigleMessage(request.Notification, request.Tokens);
+        }
+        public class MultiNotificationRequest
+        {
+            public List<string> Tokens { get; set; }
+            public Notification Notification { get; set; }
+        }
     }
 }

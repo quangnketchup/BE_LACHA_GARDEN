@@ -27,12 +27,16 @@ namespace LachaGarden.CRUDControllers
             ArrayList TreeList = new ArrayList();
             IEnumerable<Tree> tree = treeViewModel.treeRepository.GetTrees();
             TreeType treeType;
+            GardenPackage gardenPackage;
             foreach (Tree trees in tree)
             {
                 int treeID = (int)trees.TreeTypeId;
+                int gardenPackageID = (int)trees.GardenPackageId;
+                gardenPackage = treeViewModel.gardenPackageRepository.GetGardenPackageByID(gardenPackageID);
                 treeType = treeViewModel.treeTypeRepository.GetTreeTypeByID(treeID);
-                if (treeType != null)
+                if (gardenPackage != null || treeType != null)
                 {
+                    trees.GardenPackage = gardenPackage;
                     trees.TreeType = treeType;
                     TreeList.Add(trees);
                 }

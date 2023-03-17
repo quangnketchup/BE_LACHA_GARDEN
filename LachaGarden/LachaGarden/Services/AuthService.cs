@@ -3,42 +3,42 @@ using LachaGarden.Models;
 
 namespace LachaGarden.Services
 {
-    public class AuthService : IAuthService
+    public class AuthService
     {
         private readonly IUserRepository _userRepository;
 
         //private readonly ICustomerRepository _customerRepository;
         //private readonly IUnitOfWork _unitOfWork;
-        private readonly IConfiguration _configuration;
+        //private readonly IConfiguration _configuration;
 
-        public AuthService(IUserRepository userRepository, IConfiguration configuration)
-        {
-            _userRepository = userRepository;
-            _configuration = configuration;
-        }
+        //public AuthService(IUserRepository userRepository, IConfiguration configuration)
+        //{
+        //    _userRepository = userRepository;
+        //    _configuration = configuration;
+        //}
 
-        public async Task<AuthDTO> Authenticate(string email, string password)
-        {
-            var user = await _userRepository.FindByGmail(email);
+        //public async Task<AuthDTO> Authenticate(string email, string password)
+        //{
+        //    var user = await _userRepository.FindByGmail(email);
 
-            if (user == null)
-            {
-                return null;
-            }
+        //    if (user == null)
+        //    {
+        //        return null;
+        //    }
 
-            if (!AuthHelper.VerifyPassword(password, user.Password))
-            {
-                return null;
-            }
+        //    if (!AuthHelper.VerifyPassword(password, user.Password))
+        //    {
+        //        return null;
+        //    }
 
-            var token = AuthHelper.BuildToken(
-                _configuration["Jwt:Internal:Key"], _configuration["Jwt:Internal:ValidIssuer"], user.Id, user.Gmail);
+        //    var token = AuthHelper.BuildToken(
+        //        _configuration["Jwt:Internal:Key"], _configuration["Jwt:Internal:ValidIssuer"], user.Id, user.Gmail);
 
-            return new AuthDTO
-            {
-                AccessToken = token
-            };
-        }
+        //    return new AuthDTO
+        //    {
+        //        AccessToken = token
+        //    };
+        //}
 
         //public async Task<AuthDTO> Authenticate(GoogleJsonWebSignature.Payload payload)
         //{

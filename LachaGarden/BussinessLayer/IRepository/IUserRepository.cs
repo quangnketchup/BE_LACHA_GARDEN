@@ -1,15 +1,22 @@
-﻿using DataAccessLayer.Models;
+﻿using BussinessLayer.Dao;
+using DataAccessLayer.Models;
 
 namespace BussinessLayer.IRepository
 {
     public interface IUserRepository
     {
-        Task<User> Get(string id);
+        Task<User> GetUserByEmail(string email);
 
-        Task<User> FindByGmail(string Gmail);
+        IEnumerable<User> GetUsers();
 
-        Task<User> Create(User user);
+        User GetUserByID(string UserID);
 
-        Task Update(User user);
+        IEnumerable<User> GetFiltered(string tag);
+
+        void InsertUser(User user);
+
+        void UpdateUser(User user);
+
+        void RemoveUser(string userId);
     }
 }

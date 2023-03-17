@@ -9,6 +9,7 @@ namespace BussinessLayer.Dao
 {
     public class UserDao
     {
+        //-----------------------
         private lachagardenContext db = new lachagardenContext();
 
         private static UserDao instance = null;
@@ -37,15 +38,18 @@ namespace BussinessLayer.Dao
 
         public IEnumerable<User> getUserList()
         {
-            var user = new List<User>();
             List<User> FList = new List<User>();
             try
             {
                 using var context = new lachagardenContext();
-                user = context.Users.ToList();
-                for (int i = 1; i <= user.Count; i++)
+                var users = context.Users.Where(c => c.Status == 1).ToList();
+                if (users.Any())
                 {
-                    FList.Add(user[i - 1]);
+                    FList.AddRange(users);
+                }
+                else
+                {
+                    FList = null;
                 }
             }
             catch (Exception e)
@@ -119,6 +123,31 @@ namespace BussinessLayer.Dao
 
         //-------------------------
 
+        public void Remove(string userId)
+        {
+            try
+            {
+                User users = GetUserByID(userId);
+                if (users != null)
+                {
+                    using (lachagardenContext db = new lachagardenContext())
+                    {
+                        User gardenPack = db.Users.Where(d => d.Id == userId).First();
+                        gardenPack.Status = 0;
+                        db.SaveChanges();
+                    }
+                }
+                else
+                {
+                    throw new Exception("The User does not already exist.");
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
         public List<User> GetFilteredUser(String tag)
         {
             List<User> filtered = new List<User>();
@@ -131,6 +160,21 @@ namespace BussinessLayer.Dao
                     filtered.Add(user);
             }
             return filtered;
+        }
+
+        public User GetUser(string email)
+        {
+            User user = null;
+            try
+            {
+                using var context = new lachagardenContext();
+                user = context.Users.SingleOrDefault(a => a.Gmail.Equals(email));
+            }
+            catch (Exception ex)
+            {
+                throw new Exception(ex.Message);
+            }
+            return user;
         }
     }
 }
