@@ -68,11 +68,25 @@ namespace BussinessLayer.Dao
         }
 
         //-----------------------
+        public async void checkRoomNumber(Room room)
+        {
+            var roomList = getRoomList();
+            foreach (Room RoomNumber in roomList)
+            {
+                if (RoomNumber.RoomNumber == room.RoomNumber)
+                {
+                    throw new Exception("The roomNumber is already exist.");
+                }
+            }
+        }
+
+        //----------------------
         public void addNewRoom(Room room)
         {
             try
             {
                 Room rooms = GetRoomByID(room.Id);
+                checkRoomNumber(room);
                 if (rooms == null)
                 {
                     using var context = new lachagardenContext();
@@ -95,6 +109,7 @@ namespace BussinessLayer.Dao
         {
             try
             {
+                checkRoomNumber(room);
                 Room rooms = GetRoomByID(room.Id);
                 if (rooms != null)
                 {

@@ -10,6 +10,12 @@ namespace BussinessLayer.Repository
 
         public Room GetRoomByID(int RoomID) => RoomDao.Instance.GetRoomByID(RoomID);
 
-        public IEnumerable<Room> GetRooms() => RoomDao.Instance.getRoomList();
+        public IEnumerable<Room> GetRooms() => RoomDao.Instance.getRoomList(); public void InsertPackageType(PackageType packageType) => PackageTypeDao.Instance.addNewPackageType(packageType);
+
+        public void InsertRoom(Room room) => RoomDao.Instance.addNewRoom(room);
+
+        public void RemoveRoom(int RoomId) => RoomDao.Instance.Remove(RoomId);
+
+        public void UpdateRoom(Room room) => RoomDao.Instance.Update(room);
     }
 }
