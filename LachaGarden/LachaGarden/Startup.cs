@@ -1,4 +1,5 @@
 ﻿using AspNetCore.Firebase.Authentication.Extensions;
+using Azure;
 using BussinessLayer.IRepository;
 using BussinessLayer.Repository;
 using DataAccessLayer.Models;
@@ -42,16 +43,8 @@ namespace LachaGarden
             services.AddMvcCore().AddApiExplorer();
             // Add authorization
 
-            services.AddCors(options =>
-            {
-                options.AddPolicy("AllowAll", builder =>
-                {
-                    builder.AllowAnyOrigin()
-                           .AllowAnyHeader()
-                           .AllowAnyMethod()
-                    .WithOrigins("http://localhost:3000");
-                });
-            });
+            services.AddCors();
+
             services.AddFirebaseAuthentication("https://securetoken.google.com/lachagarden", "lachagarden");
             services.AddAuthorization();
 
@@ -113,12 +106,15 @@ namespace LachaGarden
             {
                 c.SwaggerEndpoint($"/swagger/v1/swagger.json", "My Api v1");
             });
-
-            app.UseCors("AllowAll");
+            app.UseCors(builder =>
+        builder.WithOrigins("http://localhost:3000")
+               .AllowAnyHeader()
+               .AllowAnyMethod());
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
+            app.UseCors("AllowAll");
         }
     }
 }

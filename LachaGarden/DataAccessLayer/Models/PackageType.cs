@@ -1,4 +1,6 @@
-﻿namespace DataAccessLayer.Models
+﻿using DataAccessLayer.Validation;
+
+namespace DataAccessLayer.Models
 {
     public partial class PackageType
     {

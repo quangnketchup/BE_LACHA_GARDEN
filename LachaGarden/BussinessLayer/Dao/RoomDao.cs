@@ -41,7 +41,7 @@ namespace BussinessLayer.Dao
                 rooms = context.Rooms.ToList();
                 for (int i = 1; i <= rooms.Count; i++)
                 {
-                    if (rooms[i - 1].Status == 1) { FList.Add(rooms[i - 1]); }
+                    if (rooms[i - 1].Status == 1 || rooms[i - 1].Status == 2) { FList.Add(rooms[i - 1]); }
                 }
             }
             catch (Exception e)

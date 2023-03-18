@@ -76,7 +76,7 @@ namespace BussinessLayer.Dao
                 var garden = getGardenPackageList();
                 foreach (GardenPackage gardenpack in garden)
                 {
-                    if (gardenpack.NamePack == gardenPacks.NamePack)
+                    if (gardenpack.NamePack == gardenPackage.NamePack)
                     {
                         throw new Exception("The Garden packs name is already exist.");
                     }

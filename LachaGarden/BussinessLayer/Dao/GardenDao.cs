@@ -1,4 +1,5 @@
-﻿using DataAccessLayer.Models;
+﻿using BussinessLayer.ValidationDao;
+using DataAccessLayer.Models;
 
 namespace BussinessLayer.Dao
 {
@@ -68,10 +69,13 @@ namespace BussinessLayer.Dao
         }
 
         //-----------------------
+
         public void addNewGarden(Garden garden)
         {
             try
             {
+                GardenValid valid = new GardenValid();
+                valid.checkIDRoom((int)garden.RoomId);
                 Garden gardens = GetGardenByID(garden.Id);
                 if (gardens == null)
                 {
