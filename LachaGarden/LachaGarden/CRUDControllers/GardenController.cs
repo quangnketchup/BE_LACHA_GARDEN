@@ -15,12 +15,39 @@ namespace LachaGarden.CRUDControllers
         private readonly IGardenRepository gardenRepository;
         private readonly IGardenPackageRepository gardenPackageRepository;
         private readonly GardenViewModel gardenAndGardenPackageRepository;
+        private readonly ICustomerRepository customerRepository;
 
-        public GardenController(IGardenRepository gardenRepository, IGardenPackageRepository gardenPackageRepository, GardenViewModel gardenAndGardenPackageRepository)
+        public GardenController(ICustomerRepository customerRepository, IGardenRepository gardenRepository, IGardenPackageRepository gardenPackageRepository, GardenViewModel gardenAndGardenPackageRepository)
         {
             this.gardenRepository = gardenRepository;
+            this.customerRepository = customerRepository;
             this.gardenPackageRepository = gardenPackageRepository;
             this.gardenAndGardenPackageRepository = gardenAndGardenPackageRepository;
+        }
+
+        // GET: api/Garden/CustomerID
+        [HttpGet("CustomerID")]
+        public ActionResult<IEnumerable<GardenDTO>> Get(string CustomerID)
+        {
+            //Get ListRoomByCustomerID
+            var roomCus = gardenAndGardenPackageRepository.RoomRepository.GetRooms();
+            ArrayList ListGarden = new ArrayList();
+            var gardens = gardenRepository.GetGardens();
+            foreach (Room roomToAdd in roomCus)
+            {
+                if (roomToAdd.CustomerId == CustomerID)
+                {
+                    foreach (Garden garden in gardens)
+                    {
+                        if (garden.RoomId == roomToAdd.Id)
+                        {
+                            ListGarden.Add(garden);
+                        }
+                    }
+                }
+            }
+
+            return Ok(ListGarden);
         }
 
         // GET: api/Garden

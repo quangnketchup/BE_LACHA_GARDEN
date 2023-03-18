@@ -1,8 +1,10 @@
 ﻿using AspNetCore.Firebase.Authentication.Extensions;
 using Azure;
+using BussinessLayer.Email;
 using BussinessLayer.IRepository;
 using BussinessLayer.Repository;
 using DataAccessLayer.Models;
+using LachaGarden.Services.Mail;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 
@@ -23,7 +25,12 @@ namespace LachaGarden
             services.AddDbContext<lachagardenContext>(options =>
                     options.UseSqlServer(Configuration.GetConnectionString("DefaultConnection")));
             // Add services to the container.
-
+            //Khai bao config cho gmail trong appsetting
+            var emailConfig = Configuration
+        .GetSection("EmailConfiguration")
+        .Get<EmailConfiguration>();
+            //Khai bao model for gmail
+            services.AddSingleton(emailConfig);
             // khai bao controller
             services.AddScoped<IGardenPackageRepository, GardenPackageRepository>();
             services.AddScoped<IPackageTypeRepository, PackageTypeRepository>();
@@ -39,6 +46,7 @@ namespace LachaGarden
             services.AddScoped<BussinessLayer.ViewModels.GardenViewModel>();
             services.AddScoped<BussinessLayer.ViewModels.RoomViewModel>();
             services.AddScoped<BussinessLayer.ViewModels.TreeViewModel>();
+            services.AddScoped<IEmailSender, EmailSender>();
 
             services.AddMvcCore().AddApiExplorer();
             // Add authorization

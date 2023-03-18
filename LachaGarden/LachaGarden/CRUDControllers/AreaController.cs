@@ -7,7 +7,6 @@ using Microsoft.AspNetCore.Mvc;
 namespace LachaGarden.CRUDControllers
 {
     [Route("api/[controller]")]
-    [Authorize]
     [ApiController]
     public class AreaController : Controller
     {
@@ -28,7 +27,7 @@ namespace LachaGarden.CRUDControllers
         }
 
         // GET: api/Area/5
-        [HttpGet("{id}")]
+        [HttpGet("{id}"), Authorize]
         public ActionResult<AreaDTO> Get(int id)
         {
             var area = areaRepository.GetAreaByID(id);
