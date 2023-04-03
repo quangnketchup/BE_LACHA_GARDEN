@@ -5,9 +5,10 @@ using BussinessLayer.IRepository;
 using BussinessLayer.Repository;
 using DataAccessLayer.Models;
 using LachaGarden.Models.Mail;
-using LachaGarden.Services.Mail;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.Extensions.DependencyInjection;
 
 namespace LachaGarden
 {
@@ -28,8 +29,7 @@ namespace LachaGarden
             // Add services to the container.
             //Khai bao config cho gmail trong appsetting
             var emailConfig = Configuration
-        .GetSection("EmailConfiguration")
-        .Get<EmailConfiguration>();
+        .GetSection("EmailConfiguration");
             //Khai bao model for gmail
             services.AddSingleton(emailConfig);
             // khai bao controller
@@ -53,7 +53,6 @@ namespace LachaGarden
             services.AddScoped<BussinessLayer.ViewModels.RequestViewModel>();
             services.AddScoped<BussinessLayer.ViewModels.ResultViewModels>();
             services.AddScoped<BussinessLayer.ViewModels.TreeCareViewModel>();
-            services.AddScoped<IEmailSender, EmailSender>();
 
             services.AddMvcCore().AddApiExplorer();
             // Add authorization
@@ -85,7 +84,7 @@ namespace LachaGarden
                                 Type = ReferenceType.SecurityScheme,
                                 Id = "Bearer"
                             },
-                            Scheme = "oauth2",
+                            Scheme = "ApiKey",
                             Name = "Bearer",
                             In = ParameterLocation.Header,
                         },
@@ -106,11 +105,6 @@ namespace LachaGarden
             {
                 builder.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
             }
-            app.UseAuthentication();
-
-            app.UseAuthorization();
-
-            app.UseRouting();
 
             // Enable CORS before the endpoint routing middleware
             app.UseCors(builder =>
@@ -125,6 +119,11 @@ namespace LachaGarden
             {
                 c.SwaggerEndpoint($"/swagger/v1/swagger.json", "My Api v1");
             });
+            app.UseRouting();
+
+            app.UseAuthentication();
+
+            app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
             {

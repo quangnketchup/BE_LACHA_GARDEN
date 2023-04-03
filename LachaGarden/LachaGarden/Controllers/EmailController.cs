@@ -9,7 +9,6 @@ using MailKit.Security;
 namespace LachaGarden.Controllers
 {
     [Route("api/[controller]")]
-    [Authorize]
     [ApiController]
     public class EmailController : ControllerBase
     {
@@ -19,8 +18,8 @@ namespace LachaGarden.Controllers
             MailAddress mailAddressmail;
             var email = new MimeMessage();
             email.From.Add(MailboxAddress.Parse("lachagarden@gmail.com"));
-            email.To.Add(MailboxAddress.Parse("dangkhoahoang39@gmail.com"));
-            email.Subject = "Chào anh iu";
+            email.To.Add(MailboxAddress.Parse("quang.nguyen20401@gmail.com"));
+            email.Subject = "Chào bạn";
             email.Body = new TextPart(MimeKit.Text.TextFormat.Html) { Text = body };
 
             using var smtp = new MailKit.Net.Smtp.SmtpClient();

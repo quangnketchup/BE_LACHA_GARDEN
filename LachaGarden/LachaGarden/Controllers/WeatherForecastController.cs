@@ -1,5 +1,4 @@
 using LachaGarden.Models.Mail;
-using LachaGarden.Services.Mail;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
@@ -15,12 +14,10 @@ namespace LachaGarden.Controllers
     };
 
         private readonly ILogger<WeatherForecastController> _logger;
-        private readonly IEmailSender _emailSender;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger, IEmailSender _emailSender)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger)
         {
             _logger = logger;
-            this._emailSender = _emailSender;
         }
 
         //[HttpGet(Name = "GetWeatherForecast")]
@@ -39,9 +36,6 @@ namespace LachaGarden.Controllers
         public IEnumerable<WeatherForecast> Get()
         {
             var rng = new Random();
-
-            var message = new Message(new string[] { "quang.nguyen20401@gmail.com" }, "Test email", "This is the content from our email.");
-            _emailSender.SendEmail(message);
 
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {

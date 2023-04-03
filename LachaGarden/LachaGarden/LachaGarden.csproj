@@ -44,4 +44,8 @@
     <ProjectReference Include="..\DataAccessLayer\DataAccessLayer.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Services\Mail\" />
+  </ItemGroup>
+
 </Project>

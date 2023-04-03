@@ -19,24 +19,6 @@ namespace LachaGarden.Controllers
             this.roleRepository = roleRepository;
         }
 
-        //IAuthService _authService;
-        //private static string ApiKey = "AIzaSyBHD0FfT6VBL4kje_dqEX0f2Y3OBzMUybk";
-        //public AuthController(IAuthService authService)
-        //{
-        //    _authService = authService;
-        //}
-        //[HttpPost]
-        //public async Task<AuthDTO> Authentication(string email, string password)
-        //{
-        //    var AccessToken = _authService.Authenticate(email, password);
-        //    return await AccessToken;
-        //}
-        //[HttpPost]
-        //public async Task<AuthDTO> SingleSignOn(GoogleJsonWebSignature.Payload googlePayload)
-        //{
-        //    var AccessToken = _authService.Authenticate(googlePayload);
-        //    return await AccessToken;
-        //}
         [HttpPost]
         public async Task<ActionResult> GetToken(LoginInfo loginInfo)
         {

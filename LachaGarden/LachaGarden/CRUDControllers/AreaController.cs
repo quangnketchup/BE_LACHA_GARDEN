@@ -1,4 +1,6 @@
-﻿using BussinessLayer.DTO;
+﻿using Abp.AspNetCore.Mvc.Authorization;
+using Abp.Authorization;
+using BussinessLayer.DTO;
 using BussinessLayer.IRepository;
 using DataAccessLayer.Models;
 using Microsoft.AspNetCore.Authorization;
@@ -18,8 +20,7 @@ namespace LachaGarden.CRUDControllers
         }
 
         // GET: api/Area
-
-        [HttpGet]
+        [HttpGet, Authorize]
         public ActionResult<IEnumerable<AreaDTO>> Get()
         {
             var areaList = areaRepository.GetAreas();
@@ -27,7 +28,7 @@ namespace LachaGarden.CRUDControllers
         }
 
         // GET: api/Area/5
-        [HttpGet("{id}"), Authorize]
+        [HttpGet("{id}")]
         public ActionResult<AreaDTO> Get(int id)
         {
             var area = areaRepository.GetAreaByID(id);
