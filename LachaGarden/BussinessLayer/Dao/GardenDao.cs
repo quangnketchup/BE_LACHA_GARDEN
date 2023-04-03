@@ -60,6 +60,14 @@ namespace BussinessLayer.Dao
             {
                 using var context = new lachagardenContext();
                 garden = context.Gardens.SingleOrDefault(p => p.Id == GardenID);
+                if (garden == null)
+                {
+                    return null;
+                }
+                else if (garden.Status == 1 || garden.Status == 2 || garden.Status == 3)
+                {
+                    return garden;
+                }
             }
             catch (Exception e)
             {
@@ -76,8 +84,7 @@ namespace BussinessLayer.Dao
             {
                 GardenValid valid = new GardenValid();
                 valid.checkIDRoom((int)garden.RoomId);
-                Garden gardens = GetGardenByID(garden.Id);
-                if (gardens == null)
+                if (GetGardenByID(garden.Id) == null)
                 {
                     using var context = new lachagardenContext();
                     context.Gardens.Add(garden);
@@ -90,14 +97,7 @@ namespace BussinessLayer.Dao
             }
             catch (Exception ex)
             {
-                // Handle the exception and display the error message
-                string errorMessage = "An error occurred while saving the entity changes.";
-                if (ex.InnerException != null)
-                {
-                    errorMessage += " See inner exception for details.";
-                    errorMessage += " Inner exception message: " + ex.InnerException.Message;
-                }
-                throw new Exception(errorMessage, ex);
+                throw new Exception(ex.Message);
             }
         }
 

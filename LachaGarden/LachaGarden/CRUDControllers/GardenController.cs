@@ -3,8 +3,12 @@ using BussinessLayer.IRepository;
 using BussinessLayer.ViewModels;
 using Castle.MicroKernel;
 using DataAccessLayer.Models;
+using LachaGarden.Models.Mail;
+using MailKit.Security;
 using Microsoft.AspNetCore.Mvc;
+using MimeKit;
 using System.Collections;
+using System.Net.Mail;
 
 namespace LachaGarden.CRUDControllers
 {
@@ -16,13 +20,15 @@ namespace LachaGarden.CRUDControllers
         private readonly IGardenPackageRepository gardenPackageRepository;
         private readonly GardenViewModel gardenAndGardenPackageRepository;
         private readonly ICustomerRepository customerRepository;
+        private readonly IRoomRepository roomRepository;
 
-        public GardenController(ICustomerRepository customerRepository, IGardenRepository gardenRepository, IGardenPackageRepository gardenPackageRepository, GardenViewModel gardenAndGardenPackageRepository)
+        public GardenController(IRoomRepository roomRepository, ICustomerRepository customerRepository, IGardenRepository gardenRepository, IGardenPackageRepository gardenPackageRepository, GardenViewModel gardenAndGardenPackageRepository)
         {
             this.gardenRepository = gardenRepository;
             this.customerRepository = customerRepository;
             this.gardenPackageRepository = gardenPackageRepository;
             this.gardenAndGardenPackageRepository = gardenAndGardenPackageRepository;
+            this.roomRepository = roomRepository;
         }
 
         // GET: api/Garden/CustomerID
@@ -75,10 +81,17 @@ namespace LachaGarden.CRUDControllers
         }
 
         // GET: api/Garden/5
-        [HttpGet("{id}"), AutoValidateAntiforgeryToken]
+        [HttpGet("{id}")]
         public ActionResult<GardenDTO> Get(int id)
         {
             var garden = gardenRepository.GetGardenByID(id);
+            int gardenPackID = (int)garden.GardenPackageId;
+            int roomID = (int)garden.RoomId;
+            garden.GardenPackage = gardenAndGardenPackageRepository.GardenPackageRepository.GetGardenPackageByID(gardenPackID);
+            garden.Room = gardenAndGardenPackageRepository.RoomRepository.GetRoomByID(roomID);
+            string CustomerID = garden.Room.CustomerId;
+            garden.Room.Customer = gardenAndGardenPackageRepository.CustomerRepository.GetCustomerByID(CustomerID);
+
             if (garden == null)
             {
                 return NotFound();
@@ -124,6 +137,44 @@ namespace LachaGarden.CRUDControllers
                     Status = garden.Status,
                     RoomId = garden.RoomId,
                 };
+                gardenRepository.UpdateGarden(UpdateGarden);
+                return Ok("Update Successfull");
+            }
+            return BadRequest(ModelState);
+        }
+
+        // POST: api/Garden/edit/5
+        [HttpPut("editStatus/{id}")]
+        public ActionResult Put(int id, [FromBody] ModelStatusGardenDTO garden)
+        {
+            var gardenUpdate = gardenRepository.GetGardenByID(id);
+            if (gardenUpdate.Status == 3)
+            {
+                return BadRequest();
+            }
+            if (ModelState.IsValid)
+            {
+                Garden UpdateGarden = new Garden
+                {
+                    Id = id,
+                    DateTime = gardenUpdate.DateTime,
+                    GardenPackageId = gardenUpdate.GardenPackageId,
+                    RoomId = gardenUpdate.RoomId,
+                    Status = garden.Status,
+                };
+
+                //-------------------------
+                if (garden.Status == 2)
+                {
+                    // send mail when stauts =2
+                    MailGarden mailGarden = new MailGarden();
+                    var roomforCus = roomRepository.GetRoomByID((int)UpdateGarden.RoomId);
+                    var customerbook = customerRepository.GetCustomerByID(roomforCus.CustomerId);
+                    //----------------------------------
+                    var gardenPacks = gardenPackageRepository.GetGardenPackageByID((int)gardenUpdate.GardenPackageId);
+                    mailGarden.sendMail(customerbook.FullName, customerbook.Gmail, gardenPacks.NamePack);
+                    //---------------------------------
+                }
                 gardenRepository.UpdateGarden(UpdateGarden);
                 return Ok("Update Successfull");
             }

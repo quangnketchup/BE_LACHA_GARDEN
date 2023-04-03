@@ -1,6 +1,6 @@
 ﻿using MimeKit;
 
-namespace LachaGarden.Services.Mail
+namespace LachaGarden.Models.Mail
 {
     public class Message
     {
@@ -12,7 +12,7 @@ namespace LachaGarden.Services.Mail
         {
             To = new List<MailboxAddress>();
 
-            To.AddRange(to.Select(x => new MailboxAddress(x)));
+            //To.AddRange(to.Select(x => new MailboxAddress(x)));
             Subject = subject;
             Content = content;
         }

@@ -1,5 +1,4 @@
-﻿using LachaGarden.Services.Mail;
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 
 namespace LachaGarden.Controllers
 {

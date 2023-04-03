@@ -1,4 +1,5 @@
 ﻿using BussinessLayer.Dao;
+using BussinessLayer.IRepository;
 using DataAccessLayer.Models;
 using System;
 using System.Collections.Generic;
@@ -8,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace BussinessLayer.Repository
 {
-    public class RequestRepository
+    public class RequestRepository : IRequestRepository
     {
         public IEnumerable<Request> GetFiltered(string tag) => RequestDao.Instance.GetFilteredRequest(tag);
 

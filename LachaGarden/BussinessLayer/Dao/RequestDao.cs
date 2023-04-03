@@ -1,4 +1,5 @@
 ﻿using DataAccessLayer.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -46,7 +47,12 @@ namespace BussinessLayer.Dao
                 requests = context.Requests.ToList();
                 for (int i = 1; i <= requests.Count; i++)
                 {
-                    if (requests[i - 1].Status == 1) { FList.Add(requests[i - 1]); }
+                    if (requests[i - 1].Status == 1 || requests[i - 1].Status == 2 || requests[i - 1].Status == 3)
+                    {
+                        var gardenID = (int)requests[i - 1].GardenId;
+                        var garden = GetGardenByID(gardenID);
+                        if (garden.Status == 2 || garden.Status==3) { FList.Add(requests[i - 1]); }
+                    }
                 }
             }
             catch (Exception e)
@@ -63,7 +69,7 @@ namespace BussinessLayer.Dao
             try
             {
                 using var context = new lachagardenContext();
-                requests = context.Requests.SingleOrDefault(p => p.Id == RequestID);
+                requests = context.Requests.SingleOrDefault(p => p.Id == RequestID && p.Status != 0);
             }
             catch (Exception e)
             {
@@ -72,17 +78,40 @@ namespace BussinessLayer.Dao
             return requests;
         }
 
+        public Garden GetGardenByID(int GardenID)
+        {
+            Garden gardens = null;
+            try
+            {
+                using var context = new lachagardenContext();
+                gardens = context.Gardens.SingleOrDefault(p => p.Id == GardenID);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+            return gardens;
+        }
+
         //-----------------------
         public void addNewRequest(Request request)
         {
             try
             {
                 Request requests = GetRequestByID(request.Id);
+                Garden garden = GetGardenByID((int)request.GardenId);
                 if (requests == null)
                 {
-                    using var context = new lachagardenContext();
-                    context.Requests.Add(request);
-                    context.SaveChanges();
+                    if (garden.Status == 2)
+                    {
+                        using var context = new lachagardenContext();
+                        context.Requests.Add(request);
+                        context.SaveChanges();
+                    }
+                    else
+                    {
+                        throw new Exception("You must to Order");
+                    }
                 }
                 else
                 {

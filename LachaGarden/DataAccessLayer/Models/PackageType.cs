@@ -1,4 +1,5 @@
-﻿using DataAccessLayer.Validation;
+﻿using System;
+using System.Collections.Generic;
 
 namespace DataAccessLayer.Models
 {

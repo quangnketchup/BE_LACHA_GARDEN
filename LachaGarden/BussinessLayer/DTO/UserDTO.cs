@@ -2,9 +2,9 @@
 
 namespace BussinessLayer.DTO
 {
-    public class UserDTO : Role
+    public class UserDTO
     {
-        public int Id { get; set; }
+        public string Id { get; set; }
         public string NameTech { get; set; }
         public string Gmail { get; set; }
         public decimal? Phone { get; set; }
@@ -12,6 +12,6 @@ namespace BussinessLayer.DTO
         public int? Gender { get; set; }
         public int? Status { get; set; }
         public int? RoleId { get; set; }
-        public string RoleName { get; set; }
+        public string Password { get; set; }
     }
 }

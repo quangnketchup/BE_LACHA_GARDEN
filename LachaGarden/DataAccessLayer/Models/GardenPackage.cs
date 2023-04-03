@@ -1,6 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
-using System.ComponentModel.DataAnnotations.Schema;
-using DataAccessLayer.Validation;
+﻿using System;
+using System.Collections.Generic;
 
 namespace DataAccessLayer.Models
 {
@@ -13,9 +12,7 @@ namespace DataAccessLayer.Models
         }
 
         public int Id { get; set; }
-
         public string NamePack { get; set; }
-
         public string Image { get; set; }
         public double? Length { get; set; }
         public double? Width { get; set; }

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace BussinessLayer.IRepository
 {
-    public interface ITreeCareCareRepository
+    public interface ITreeCareRepository
     {
         IEnumerable<TreeCare> GetTreeCares();
 

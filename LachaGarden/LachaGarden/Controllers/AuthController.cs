@@ -38,7 +38,7 @@ namespace LachaGarden.Controllers
         //    return await AccessToken;
         //}
         [HttpPost]
-        public async Task<ActionResult> GetToken([FromForm] LoginInfo loginInfo)
+        public async Task<ActionResult> GetToken(LoginInfo loginInfo)
         {
             var UserList = userRepository.GetUsers();
             if (UserList == null)
@@ -74,7 +74,7 @@ namespace LachaGarden.Controllers
                             {
                                 if (user.RoleId == role.RoleId)
                                 {
-                                    token.role_Name = role.RoleName;
+                                    token.roleId = role.RoleId;
                                 }
                             }
                         }

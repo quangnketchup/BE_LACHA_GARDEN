@@ -1,4 +1,6 @@
-﻿namespace LachaGarden.Models
+﻿using System.Collections;
+
+namespace LachaGarden.Models
 {
     public class Token
     {
@@ -10,5 +12,6 @@
         public string access_token { get; set; }
         public string id_token { get; set; }
         public string role_Name { get; set; }
+        public int roleId { get; set; }
     }
 }

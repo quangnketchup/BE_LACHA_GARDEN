@@ -19,6 +19,8 @@ namespace BussinessLayer.Repository
 
         public IEnumerable<User> GetUsers() => UserDao.Instance.getUserList();
 
+        public IEnumerable<User> GetTechnicals() => UserDao.Instance.getUserTechnicalList();
+
         public async Task<User> GetUserByEmail(string email)
         => UserDao.Instance.GetUser(email);
     }

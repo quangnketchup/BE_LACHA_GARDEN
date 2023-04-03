@@ -9,6 +9,8 @@ namespace BussinessLayer.IRepository
 
         IEnumerable<User> GetUsers();
 
+        IEnumerable<User> GetTechnicals();
+
         User GetUserByID(string UserID);
 
         IEnumerable<User> GetFiltered(string tag);

@@ -2,7 +2,7 @@
 
 namespace BussinessLayer.DTO
 {
-    public class GardenDTO : GardenPackage
+    public class GardenDTO
     {
         public int Id { get; set; }
         public int? Status { get; set; }

@@ -23,10 +23,8 @@ namespace BussinessLayer.ValidationDao
 
         public void checkIDRoom(int id)
         {
-            var garden = gardenDao.GetGardenByID(id);
-            int roomID = (int)garden.RoomId;
-            Room room = RoomDao.Instance.GetRoomByID(roomID);
-            if (room != null)
+            Room room = RoomDao.Instance.GetRoomByID(id);
+            if (room == null)
             {
                 throw new Exception("Room not exist!");
             }

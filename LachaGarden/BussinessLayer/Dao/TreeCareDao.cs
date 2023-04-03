@@ -46,7 +46,7 @@ namespace BussinessLayer.Dao
                 treeCares = context.TreeCares.ToList();
                 for (int i = 1; i <= treeCares.Count; i++)
                 {
-                    if (treeCares[i - 1].Status == 1) { FList.Add(treeCares[i - 1]); }
+                    if (treeCares[i - 1].Status == 1|| treeCares[i - 1].Status == 2|| treeCares[i - 1].Status == 3) { FList.Add(treeCares[i - 1]); }
                 }
             }
             catch (Exception e)
@@ -63,7 +63,7 @@ namespace BussinessLayer.Dao
             try
             {
                 using var context = new lachagardenContext();
-                treeCares = context.TreeCares.SingleOrDefault(p => p.Id == TreeCareID);
+                treeCares = context.TreeCares.SingleOrDefault(p => p.Id == TreeCareID && p.Status != 0);
             }
             catch (Exception e)
             {

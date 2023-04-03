@@ -12,12 +12,14 @@ namespace BussinessLayer.ViewModels
         public IGardenPackageRepository GardenPackageRepository { get; set; }
         public IGardenRepository GardenRepository { get; set; }
         public IRoomRepository RoomRepository { get; set; }
+        public ICustomerRepository CustomerRepository { get; set; }
 
-        public GardenViewModel(IGardenPackageRepository GardenPackageRepository, IGardenRepository GardenRepository, IRoomRepository RoomRepository)
+        public GardenViewModel(ICustomerRepository CustomerRepository, IGardenPackageRepository GardenPackageRepository, IGardenRepository GardenRepository, IRoomRepository RoomRepository)
         {
             this.GardenPackageRepository = GardenPackageRepository;
             this.GardenRepository = GardenRepository;
             this.RoomRepository = RoomRepository;
+            this.CustomerRepository = CustomerRepository;
         }
     }
 }

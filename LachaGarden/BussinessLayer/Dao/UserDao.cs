@@ -42,6 +42,29 @@ namespace BussinessLayer.Dao
             try
             {
                 using var context = new lachagardenContext();
+                var users = context.Users.Where(c => c.Status == 1 && c.RoleId == 2 || c.RoleId == 3).ToList();
+                if (users.Any())
+                {
+                    FList.AddRange(users);
+                }
+                else
+                {
+                    FList = null;
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+            return FList;
+        }
+
+        public IEnumerable<User> getUserTechnicalList()
+        {
+            List<User> FList = new List<User>();
+            try
+            {
+                using var context = new lachagardenContext();
                 var users = context.Users.Where(c => c.Status == 1).ToList();
                 if (users.Any())
                 {
@@ -66,7 +89,7 @@ namespace BussinessLayer.Dao
             try
             {
                 using var context = new lachagardenContext();
-                user = context.Users.SingleOrDefault(p => p.Id == UserID);
+                user = context.Users.SingleOrDefault(p => p.Id == UserID && p.Status == 1);
             }
             catch (Exception e)
             {

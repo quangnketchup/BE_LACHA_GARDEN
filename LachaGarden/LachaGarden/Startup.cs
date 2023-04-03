@@ -1,9 +1,10 @@
-﻿using AspNetCore.Firebase.Authentication.Extensions;
+﻿using MailKit.Net.Smtp;
+using AspNetCore.Firebase.Authentication.Extensions;
 using Azure;
-using BussinessLayer.Email;
 using BussinessLayer.IRepository;
 using BussinessLayer.Repository;
 using DataAccessLayer.Models;
+using LachaGarden.Models.Mail;
 using LachaGarden.Services.Mail;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
@@ -42,10 +43,16 @@ namespace LachaGarden
             services.AddScoped<IGardenRepository, GardenRepository>();
             services.AddScoped<ICustomerRepository, CustomerRepository>();
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<ITreeCareRepository, TreeCareRepository>();
+            services.AddScoped<IResultRepository, ResultRepository>();
             services.AddScoped<IRoleRepository, RoleRepository>();
+            services.AddScoped<IRequestRepository, RequestRepository>();
             services.AddScoped<BussinessLayer.ViewModels.GardenViewModel>();
             services.AddScoped<BussinessLayer.ViewModels.RoomViewModel>();
             services.AddScoped<BussinessLayer.ViewModels.TreeViewModel>();
+            services.AddScoped<BussinessLayer.ViewModels.RequestViewModel>();
+            services.AddScoped<BussinessLayer.ViewModels.ResultViewModels>();
+            services.AddScoped<BussinessLayer.ViewModels.TreeCareViewModel>();
             services.AddScoped<IEmailSender, EmailSender>();
 
             services.AddMvcCore().AddApiExplorer();
@@ -99,14 +106,18 @@ namespace LachaGarden
             {
                 builder.AddJsonFile("appsettings.json", optional: false, reloadOnChange: true);
             }
-
-            app.UseHttpsRedirection();
-
-            app.UseRouting();
-
             app.UseAuthentication();
 
             app.UseAuthorization();
+
+            app.UseRouting();
+
+            // Enable CORS before the endpoint routing middleware
+            app.UseCors(builder =>
+                builder.WithOrigins("http://localhost:3000", "https://lacha.netlify.app", "https://la-cha.vercel.app")
+                       .AllowCredentials()
+                       .AllowAnyHeader()
+                       .AllowAnyMethod());
 
             app.UseSwagger();
 
@@ -114,15 +125,11 @@ namespace LachaGarden
             {
                 c.SwaggerEndpoint($"/swagger/v1/swagger.json", "My Api v1");
             });
-            app.UseCors(builder =>
-        builder.WithOrigins("http://localhost:3000")
-               .AllowAnyHeader()
-               .AllowAnyMethod());
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
-            app.UseCors("AllowAll");
         }
     }
 }

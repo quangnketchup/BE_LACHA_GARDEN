@@ -1,4 +1,6 @@
-﻿namespace LachaGarden.Services.Mail
+﻿using LachaGarden.Models.Mail;
+
+namespace LachaGarden.Services.Mail
 {
     public interface IEmailSender
     {

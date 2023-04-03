@@ -63,7 +63,7 @@ namespace BussinessLayer.Dao
             try
             {
                 using var context = new lachagardenContext();
-                results = context.Results.SingleOrDefault(p => p.Id == ResultID);
+                results = context.Results.SingleOrDefault(p => p.Id == ResultID && p.Status != 0);
             }
             catch (Exception e)
             {
